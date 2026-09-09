@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Ujian UPKP & UKOM PJL</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- HEADER -->
+        <header>
+            <div class="logo-area">
+                <div class="logo-circle"></div>
+                <h1>Simulasi Ujian BPS</h1>
+            </div>
+            <div class="timer" id="timer" style="display: none;">
+                <span class="icon">⏳</span> <span id="time-display">90:00</span>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT AREA -->
+        <main>
+            <!-- 1. HOME SCREEN -->
+            <section id="home-screen" class="screen active">
+                <div class="glass-card text-center">
+                    <h2>Selamat Datang</h2>
+                    <p class="subtitle">Silakan pilih jenis simulasi ujian yang ingin Anda ikuti. Waktu dan jumlah soal akan disesuaikan secara otomatis.</p>
+                    
+                    <div class="button-group-vertical">
+                        <button class="btn btn-primary btn-large" onclick="app.showPackageSelection('upkp')">
+                            <span class="btn-icon">📝</span> Simulasi Ujian UPKP
+                        </button>
+                        <button class="btn btn-secondary btn-large" onclick="app.showPackageSelection('ukompjl')">
+                            <span class="btn-icon">📊</span> Simulasi UKOM PJL (Statistisi)
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. PACKAGE SELECTION SCREEN -->
+            <section id="package-screen" class="screen">
+                <div class="glass-card text-center">
+                    <h2 id="package-title">Pilih Paket Ujian</h2>
+                    <p class="subtitle">Tersedia berbagai variasi paket untuk memperkaya latihan soal Anda.</p>
+                    
+                    <div class="button-group-vertical" id="package-list">
+                        <!-- Packages injected by JS -->
+                    </div>
+                    
+                    <div class="button-group-horizontal" style="margin-top: 30px;">
+                        <button class="btn btn-outline" onclick="app.goHome()">Kembali</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. QUIZ SCREEN -->
+            <section id="quiz-screen" class="screen quiz-layout">
+                <!-- Left Content: Question -->
+                <div class="quiz-main-content">
+                    <div class="quiz-header">
+                        <h3 id="exam-title">Judul Ujian</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <p class="progress-text">Soal <span id="current-q-num">1</span> dari <span id="total-q-num">100</span></p>
+                    </div>
+
+                    <div class="glass-card question-card">
+                        <span class="category-badge" id="question-category">Kategori Soal</span>
+                        <h4 class="question-text" id="question-text">Teks pertanyaan akan muncul di sini...</h4>
+                        <div class="options-container" id="options-container">
+                            <!-- Options injected by JS -->
+                        </div>
+                        
+                        <div class="action-buttons" style="display: flex; gap: 15px; margin-top: 25px; flex-wrap: wrap;">
+                            <button class="btn btn-warning" id="btn-doubt" onclick="app.toggleDoubt()">Ragu-ragu</button>
+                            <button class="btn btn-danger" id="btn-clear" onclick="app.clearAnswer()">Hapus Jawaban</button>
+                        </div>
+                    </div>
+
+                    <div class="quiz-footer">
+                        <button class="btn btn-outline" id="btn-prev" onclick="app.prevQuestion()">Kembali</button>
+                        <button class="btn btn-primary" id="btn-next" onclick="app.nextQuestion()">Selanjutnya</button>
+                        <button class="btn btn-success" id="btn-finish" onclick="app.requestFinishExam()" style="display: none;">Selesai Ujian</button>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar: Navigation Grid -->
+                <div class="quiz-sidebar glass-card">
+                    <h3>Navigasi Soal</h3>
+                    <p class="subtitle" style="font-size: 0.85rem; margin-bottom: 15px;">Pilih nomor untuk melompat ke soal tertentu.</p>
+                    <div class="nav-grid" id="nav-grid">
+                        <!-- Grid boxes injected by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. RESULT SCREEN -->
+            <section id="result-screen" class="screen">
+                <div class="glass-card text-center result-card">
+                    <h2>Hasil Ujian</h2>
+                    <div class="score-circle">
+                        <span id="final-score">100</span>
+                    </div>
+                    <p class="result-stats">Benar: <span id="correct-count">0</span> | Salah: <span id="wrong-count">0</span> | Kosong: <span id="empty-count">0</span></p>
+                    
+                    <div id="category-breakdown" style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:30px;"></div>
+                    <div class="review-section" id="review-section">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <h3 style="margin: 0;">Pembahasan</h3>
+                            <select id="review-filter" onchange="app.filterReviews()" class="btn btn-outline" style="padding: 8px; border-radius: 8px;">
+                                <option value="all">Semua Soal</option>
+                                <option value="wrong">Jawaban Salah / Kosong</option>
+                                <option value="correct">Jawaban Benar</option>
+                            </select>
+                        </div>
+                        <div id="review-list" class="review-list">
+                            <!-- Review items injected by JS -->
+                        </div>
+                    </div>
+
+                    <div class="button-group-horizontal">
+                        <button class="btn btn-primary" onclick="app.goHome()">Kembali ke Beranda</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
