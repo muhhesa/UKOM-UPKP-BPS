@@ -9,10 +9,58 @@ class ExamApp {
         
         this.timerInterval = null;
         this.timeRemaining = 0; // in seconds
+        this.isActiveQuiz = false;
 
         this.initElements();
+        this.restoreState();
     }
 
+    
+    saveState() {
+        if (!this.isActiveQuiz) return;
+        const state = {
+            currentExamType: this.currentExamType,
+            currentPackageId: this.currentPackageId,
+            currentQuestionIndex: this.currentQuestionIndex,
+            userAnswers: this.userAnswers,
+            doubtfulAnswers: Array.from(this.doubtfulAnswers),
+            timeRemaining: this.timeRemaining
+        };
+        sessionStorage.setItem('examState', JSON.stringify(state));
+    }
+
+    restoreState() {
+        const saved = sessionStorage.getItem('examState');
+        if (saved) {
+            try {
+                const state = JSON.parse(saved);
+                this.currentExamType = state.currentExamType;
+                this.currentPackageId = state.currentPackageId;
+                
+                const examCategory = examData[this.currentExamType];
+                const selectedPackage = examCategory.packages[this.currentPackageId];
+                this.questions = selectedPackage.questions;
+                
+                this.currentQuestionIndex = state.currentQuestionIndex;
+                this.userAnswers = state.userAnswers || {};
+                this.doubtfulAnswers = new Set(state.doubtfulAnswers || []);
+                this.timeRemaining = state.timeRemaining;
+                
+                this.examTitle.textContent = `${examCategory.title} - ${selectedPackage.name}`;
+                this.totalQNum.textContent = this.questions.length;
+                this.isActiveQuiz = true;
+                
+                this.initNavGrid();
+                this.startTimer();
+                this.switchScreen(this.quizScreen);
+                this.loadQuestion();
+            } catch (e) {
+                console.error("Gagal memulihkan sesi ujian", e);
+                sessionStorage.removeItem('examState');
+                this.isActiveQuiz = false;
+            }
+        }
+    }
     initElements() {
         // Screens
         this.homeScreen = document.getElementById('home-screen');
@@ -91,6 +139,7 @@ class ExamApp {
         this.totalQNum.textContent = this.questions.length;
         
         this.timeRemaining = examCategory.durationMinutes * 60;
+        this.isActiveQuiz = true;
         
         this.initNavGrid();
         this.startTimer();
@@ -134,6 +183,7 @@ class ExamApp {
                 box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }
         }
+        this.saveState();
     }
 
     jumpToQuestion(index) {
@@ -149,6 +199,7 @@ class ExamApp {
         this.timerInterval = setInterval(() => {
             this.timeRemaining--;
             this.updateTimeDisplay();
+            this.saveState();
             
             if(this.timeRemaining <= 0) {
                 clearInterval(this.timerInterval);
@@ -296,6 +347,8 @@ class ExamApp {
     }
 
     finishExam(isForced = false) {
+        this.isActiveQuiz = false;
+        sessionStorage.removeItem('examState');
         clearInterval(this.timerInterval);
         this.timerContainer.style.display = 'none';
         this.calculateResult();
@@ -414,6 +467,8 @@ class ExamApp {
     }
 
     goHome() {
+        this.isActiveQuiz = false;
+        sessionStorage.removeItem('examState');
         clearInterval(this.timerInterval);
         this.timerContainer.style.display = 'none';
         this.switchScreen(this.homeScreen);
