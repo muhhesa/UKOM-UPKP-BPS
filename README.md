@@ -1,37 +1,29 @@
-# 🎓 Aplikasi Simulasi Ujian BPS
+# Aplikasi Simulasi Ujian BPS
 
-Aplikasi ini adalah simulasi ujian berbasis Web yang dibuat khusus untuk latihan Ujian Penyesuaian Kenaikan Pangkat (UPKP) dan Uji Kompetensi (UKOM) di lingkungan Badan Pusat Statistik (BPS).
+Aplikasi ini merupakan simulasi ujian berbasis Web yang ditujukan untuk latihan Ujian Penyesuaian Kenaikan Pangkat (UPKP) dan Uji Kompetensi (UKOM) di lingkungan Badan Pusat Statistik. Aplikasi dirancang agar dapat diakses secara luring (offline) tanpa memerlukan instalasi aplikasi tambahan.
 
-Aplikasi ini dirancang dengan antarmuka yang modern, interaktif, dan ringan tanpa memerlukan instalasi aplikasi tambahan maupun koneksi internet (bisa berjalan secara *offline*).
+## Panduan Penggunaan
 
----
+Aplikasi ini dibangun menggunakan HTML, CSS, dan JavaScript tanpa memerlukan peladen web (web server) maupun pangkalan data (database).
 
-## 🚀 Cara Menjalankan Aplikasi
+Langkah-langkah untuk menjalankan aplikasi:
+1. Buka File Explorer pada sistem operasi Anda.
+2. Akses direktori repositori aplikasi ini.
+3. Buka (klik ganda) berkas bernama `index.html`.
+4. Aplikasi akan otomatis terbuka melalui peramban web (web browser) bawaan Anda.
 
-Anda **TIDAK PERLU** menginstal aplikasi apapun seperti web server, PHP, atau database. Aplikasi ini 100% menggunakan HTML, CSS, dan JavaScript murni.
+## Pembaruan Data Soal
 
-Ikuti langkah-langkah mudah berikut:
-1. Buka aplikasi **File Explorer** di Windows Anda.
-2. Masuk ke folder aplikasi ini:
-   `d:\2. Badan Pusat Statistik\1. Badan Pusat Statistik Kab. Toraja Utara\11. UJIAN PI DAN UKOM\Aplikasi Simulasi Ujian`
-3. Cari file bernama **`index.html`**.
-4. **Klik ganda (double-click)** pada file `index.html` tersebut.
-5. Selesai! Aplikasi akan otomatis terbuka di web browser default Anda (seperti Google Chrome, Microsoft Edge, atau Mozilla Firefox).
+Data bank soal disimpan dalam berkas `data.js`. Anda dapat memodifikasi berkas ini untuk menambah atau memperbarui daftar pertanyaan.
 
----
-
-## 📝 Cara Menambahkan & Mengedit Soal
-
-Data soal-soal (bank soal) disimpan secara terpisah di dalam file **`data.js`**. Jika Anda ingin menambahkan soal asli dari file PDF/Gambar, Anda bisa mengedit file ini.
-
-### Langkah-langkah:
-1. Klik kanan pada file **`data.js`**, lalu pilih **"Open with"** -> **"Notepad"** (atau gunakan aplikasi teks editor lain seperti VS Code jika punya).
-2. Di dalam file tersebut, Anda akan melihat struktur kode seperti ini:
+Langkah-langkah penyuntingan:
+1. Buka berkas `data.js` menggunakan aplikasi penyunting teks (seperti Notepad atau Visual Studio Code).
+2. Temukan struktur kode soal sebagai berikut:
 
 ```javascript
 {
-    id: 1, // Nomor urut soal (tidak wajib berurutan)
-    text: "Teks pertanyaan Anda di sini...",
+    id: 1, 
+    text: "Teks pertanyaan",
     options: [
         "Pilihan A",
         "Pilihan B",
@@ -39,27 +31,15 @@ Data soal-soal (bank soal) disimpan secara terpisah di dalam file **`data.js`**.
         "Pilihan D",
         "Pilihan E"
     ],
-    correctAnswer: 0, // Kunci Jawaban. (0 = Pilihan A, 1 = B, 2 = C, 3 = D, 4 = E)
-    explanation: "Penjelasan mengapa jawaban tersebut benar (Boleh dikosongkan)"
+    correctAnswer: 0, // Kunci Jawaban (0 = A, 1 = B, 2 = C, 3 = D, 4 = E)
+    explanation: "Penjelasan jawaban"
 }
 ```
 
-3. Silakan ketik soal (atau *copy-paste* dari file lain) dan ganti teks di dalam tanda kutip `" "`.
-4. Untuk **Kunci Jawaban (`correctAnswer`)**, ingat bahwa perhitungannya dimulai dari **angka 0**:
-   - `0` untuk Pilihan ke-1 (A)
-   - `1` untuk Pilihan ke-2 (B)
-   - `2` untuk Pilihan ke-3 (C)
-   - `3` untuk Pilihan ke-4 (D)
-   - `4` untuk Pilihan ke-5 (E)
-5. Jika sudah selesai mengubah atau menambah soal, **Simpan / Save (Ctrl + S)** file `data.js` tersebut.
-6. Muat ulang (*Refresh/F5*) browser yang sedang membuka `index.html`, maka soal terbaru otomatis muncul.
+3. Modifikasi bagian di dalam tanda kutip sesuai kebutuhan. Indeks kunci jawaban (`correctAnswer`) dimulai dari angka 0.
+4. Simpan perubahan pada berkas `data.js`.
+5. Muat ulang halaman peramban web untuk melihat pembaruan soal.
 
----
+## Pengaturan Waktu Ujian
 
-## 🛠️ Pengaturan Waktu Ujian
-Jika Anda ingin mengubah durasi waktu simulasi (saat ini default-nya 15 menit), Anda bisa melakukannya di dalam file **`data.js`**. 
-Cari teks `durationMinutes: 15` dan ubah angkanya sesuai dengan menit yang Anda inginkan.
-
----
-
-Selamat berlatih, semoga sukses dalam ujian UPKP dan UKOM PJL!
+Durasi ujian dapat disesuaikan melalui berkas `data.js`. Ubah nilai pada variabel `durationMinutes` sesuai dengan durasi waktu (dalam menit) yang dibutuhkan.
