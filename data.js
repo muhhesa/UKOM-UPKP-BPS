@@ -8451,7 +8451,7 @@ const ukomPkgB = {
     ]
 };
 
-if (typeof examData !== 'undefined' && examData.ukom && examData.ukom.packages) {
-    examData.ukom.packages.push(ukomPkgB);
-    examData.ukom.packages.sort((a, b) => a.name.localeCompare(b.name));
+if (typeof examData !== 'undefined' && examData.ukompjl && examData.ukompjl.packages) {
+    examData.ukompjl.packages.push(ukomPkgB);
+    examData.ukompjl.packages.sort((a, b) => a.name.localeCompare(b.name));
 }
