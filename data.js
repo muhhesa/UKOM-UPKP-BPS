@@ -5274,3 +5274,3184 @@ if (typeof examData !== 'undefined' && examData.upkp && examData.upkp.packages) 
 }
 
 if (typeof examData !== 'undefined' && examData.upkp && examData.upkp.packages) { examData.upkp.packages.sort((a, b) => a.name.localeCompare(b.name)); }
+
+// Append new packages E and F dynamically
+const pkgE = {
+    "name": "Paket E",
+    "questions": [
+        {
+            "category": "TWK — Pancasila",
+            "text": "Rumusan Pancasila yang sah sebagai dasar negara terdapat dalam …",
+            "options": [
+                "Piagam Jakarta",
+                "Pidato Bung Karno 1 Juni 1945",
+                "Pembukaan UUD 1945 alinea keempat",
+                "Pasal 1 UUD 1945",
+                "Penjelasan UUD 1945"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TWK — Pancasila",
+            "text": "Nilai musyawarah untuk mufakat dalam pengambilan keputusan bersumber dari sila …",
+            "options": [
+                "Pertama",
+                "Kedua",
+                "Ketiga",
+                "Keempat",
+                "Kelima"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Kunci Jawaban: D"
+        },
+        {
+            "category": "TWK — Pancasila",
+            "text": "Lambang sila kedua Pancasila adalah …",
+            "options": [
+                "Bintang",
+                "Rantai",
+                "Pohon beringin",
+                "Kepala banteng",
+                "Padi dan kapas"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TWK — Pancasila",
+            "text": "Hari Lahir Pancasila diperingati setiap tanggal …",
+            "options": [
+                "18 Agustus",
+                "17 Agustus",
+                "1 Juni",
+                "22 Juni",
+                "1 Oktober"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TWK — Pancasila",
+            "text": "Pancasila sebagai ideologi terbuka berarti …",
+            "options": [
+                "nilai dasarnya dapat diganti setiap pergantian pemerintahan",
+                "nilai dasarnya tetap, sedangkan nilai instrumental dan praksisnya dapat dikembangkan sesuai perkembangan zaman",
+                "menerima semua ideologi asing",
+                "tidak memiliki nilai dasar",
+                "hanya berlaku bagi penyelenggara negara"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TWK — Pancasila",
+            "text": "ASN yang melayani setiap pemohon secara adil tanpa memandang status sosial merupakan pengamalan sila …",
+            "options": [
+                "Pertama",
+                "Kedua",
+                "Ketiga",
+                "Keempat",
+                "Kelima"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Kunci Jawaban: E"
+        },
+        {
+            "category": "TWK — Pancasila",
+            "text": "Perubahan rumusan sila pertama Piagam Jakarta menjadi \"Ketuhanan Yang Maha Esa\" ditetapkan oleh …",
+            "options": [
+                "BPUPKI",
+                "PPKI",
+                "KNIP",
+                "MPRS",
+                "DPR"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TWK — Pancasila",
+            "text": "Tokoh yang pada 1 Juni 1945 mengusulkan lima dasar negara dengan nama Pancasila adalah …",
+            "options": [
+                "Moh. Yamin",
+                "Soepomo",
+                "Soekarno",
+                "Moh. Hatta",
+                "Ki Hajar Dewantara"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TWK — Pancasila",
+            "text": "Sikap berikut yang mencerminkan sila Persatuan Indonesia adalah …",
+            "options": [
+                "mengutamakan kepentingan kelompok",
+                "cinta tanah air dan rela berkorban demi bangsa",
+                "memaksakan kehendak",
+                "menolak keberagaman",
+                "mengutamakan daerah asal dalam pergaulan"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TWK — Pancasila",
+            "text": "Kedudukan Pancasila sebagai sumber dari segala sumber hukum negara ditegaskan dalam …",
+            "options": [
+                "UU No. 12 Tahun 2011 tentang Pembentukan Peraturan Perundang-undangan",
+                "UU ITE",
+                "UU ASN",
+                "KUHAP",
+                "UU Pemilu"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TWK — UUD 1945",
+            "text": "Kedaulatan berada di tangan rakyat dan dilaksanakan menurut UUD tercantum dalam Pasal …",
+            "options": [
+                "1 ayat (1)",
+                "1 ayat (2)",
+                "1 ayat (3)",
+                "2 ayat (1)",
+                "3 ayat (1)"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TWK — UUD 1945",
+            "text": "UUD 1945 telah mengalami perubahan (amandemen) sebanyak … kali.",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TWK — UUD 1945",
+            "text": "MPR terdiri atas anggota DPR dan anggota …",
+            "options": [
+                "DPD",
+                "DPRD",
+                "Menteri",
+                "Gubernur",
+                "TNI/Polri"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TWK — UUD 1945",
+            "text": "Lembaga yang berwenang menguji undang-undang terhadap UUD adalah …",
+            "options": [
+                "Mahkamah Agung",
+                "Mahkamah Konstitusi",
+                "Komisi Yudisial",
+                "DPR",
+                "BPK"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TWK — UUD 1945",
+            "text": "Masa jabatan Presiden dan Wakil Presiden menurut UUD 1945 adalah …",
+            "options": [
+                "4 tahun, dapat dipilih kembali tanpa batas",
+                "5 tahun, dapat dipilih kembali hanya untuk satu kali masa jabatan",
+                "5 tahun tanpa batas pemilihan",
+                "6 tahun",
+                "7 tahun"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TWK — UUD 1945",
+            "text": "Hak atas pendidikan dan kewajiban mengikuti pendidikan dasar diatur dalam Pasal …",
+            "options": [
+                "28A",
+                "29",
+                "31",
+                "33",
+                "34"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TWK — UUD 1945",
+            "text": "\"Perekonomian disusun sebagai usaha bersama berdasar atas asas kekeluargaan\" terdapat dalam Pasal …",
+            "options": [
+                "31",
+                "32",
+                "33",
+                "34",
+                "35"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TWK — UUD 1945",
+            "text": "Badan yang berwenang memeriksa pengelolaan dan tanggung jawab keuangan negara adalah …",
+            "options": [
+                "Inspektorat",
+                "BPK",
+                "BPKP",
+                "KPK",
+                "Kejaksaan Agung"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TWK — UUD 1945",
+            "text": "Pemerintahan daerah provinsi, kabupaten, dan kota diatur dalam Pasal …",
+            "options": [
+                "18",
+                "20",
+                "22",
+                "24",
+                "26"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TWK — UUD 1945",
+            "text": "Hak asasi manusia diatur secara khusus dalam Bab XA, yaitu Pasal …",
+            "options": [
+                "27–28",
+                "28A–28J",
+                "29–30",
+                "30–31",
+                "33–34"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TWK — Sejarah Indonesia",
+            "text": "Sumpah Pemuda dicetuskan pada …",
+            "options": [
+                "20 Mei 1908",
+                "28 Oktober 1928",
+                "17 Agustus 1945",
+                "10 November 1945",
+                "1 Juni 1945"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TWK — Sejarah Indonesia",
+            "text": "Naskah Proklamasi Kemerdekaan RI diketik oleh …",
+            "options": [
+                "Soekarno",
+                "Moh. Hatta",
+                "Sayuti Melik",
+                "Ahmad Soebardjo",
+                "Fatmawati"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TWK — Sejarah Indonesia",
+            "text": "Organisasi pergerakan nasional yang berdiri pada 1908 adalah …",
+            "options": [
+                "Sarekat Islam",
+                "Budi Utomo",
+                "Indische Partij",
+                "PNI",
+                "Muhammadiyah"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TWK — Sejarah Indonesia",
+            "text": "Hasil Konferensi Meja Bundar berupa pengakuan kedaulatan oleh Belanda terjadi pada …",
+            "options": [
+                "27 Desember 1949",
+                "17 Agustus 1950",
+                "5 Juli 1959",
+                "1 Maret 1949",
+                "18 Agustus 1945"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TWK — Sejarah Indonesia",
+            "text": "Salah satu isi Dekrit Presiden 5 Juli 1959 adalah …",
+            "options": [
+                "pembentukan RIS",
+                "kembali ke UUD 1945",
+                "pemberlakuan UUDS 1950",
+                "pembubaran PPKI",
+                "amandemen UUD 1945"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TWK — Bahasa Indonesia",
+            "text": "Kata berikut yang penulisannya baku adalah …",
+            "options": [
+                "aktifitas",
+                "kwalitas",
+                "analisis",
+                "praktek",
+                "resiko"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TWK — Bahasa Indonesia",
+            "text": "Kalimat yang efektif adalah …",
+            "options": [
+                "Para hadirin-hadirin dipersilakan duduk.",
+                "Para hadirin dipersilakan duduk.",
+                "Hadirin sekalian-sekalian dimohon duduk.",
+                "Para peserta-peserta dipersilakan duduk.",
+                "Daripada hadirin dipersilakan duduk."
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TWK — Bahasa Indonesia",
+            "text": "Penulisan kata depan dan awalan yang benar terdapat pada kalimat …",
+            "options": [
+                "Buku itu di letakkan diatas meja.",
+                "Buku itu diletakkan diatas meja.",
+                "Buku itu diletakkan di atas meja.",
+                "Buku itu di letakkan di atas meja.",
+                "Buku itu diletakan di atas meja."
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TWK — Bahasa Indonesia",
+            "text": "\"Meskipun hujan deras, ia tetap berangkat ke kantor.\" Kalimat tersebut termasuk kalimat …",
+            "options": [
+                "tunggal",
+                "majemuk setara",
+                "majemuk bertingkat",
+                "majemuk campuran",
+                "elips"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TWK — Bahasa Indonesia",
+            "text": "Gagasan pokok paragraf umumnya terdapat pada …",
+            "options": [
+                "kalimat utama",
+                "kalimat penjelas",
+                "kalimat penutup",
+                "judul bab",
+                "catatan kaki"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKT — Peraturan Kepegawaian",
+            "text": "Undang-undang yang saat ini mengatur Aparatur Sipil Negara adalah …",
+            "options": [
+                "UU No. 8 Tahun 1974",
+                "UU No. 43 Tahun 1999",
+                "UU No. 5 Tahun 2014",
+                "UU No. 20 Tahun 2023",
+                "UU No. 23 Tahun 2014"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Kunci Jawaban: D"
+        },
+        {
+            "category": "TKT — Peraturan Kepegawaian",
+            "text": "Dalam nilai dasar BerAKHLAK, \"Harmonis\" dimaknai sebagai …",
+            "options": [
+                "patuh pada atasan",
+                "saling peduli dan menghargai perbedaan",
+                "bekerja cepat",
+                "mengutamakan hasil",
+                "menjaga rahasia jabatan"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKT — Peraturan Kepegawaian",
+            "text": "Peraturan Pemerintah yang mengatur disiplin PNS adalah …",
+            "options": [
+                "PP 53 Tahun 2010",
+                "PP 94 Tahun 2021",
+                "PP 11 Tahun 2017",
+                "PP 30 Tahun 2019",
+                "PP 17 Tahun 2020"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKT — Peraturan Kepegawaian",
+            "text": "Berikut ini yang bukan predikat kinerja PNS menurut PP 30 Tahun 2019 adalah …",
+            "options": [
+                "Sangat Baik",
+                "Baik",
+                "Butuh Perbaikan",
+                "Kurang",
+                "Cukup"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Kunci Jawaban: E"
+        },
+        {
+            "category": "TKT — Peraturan Kepegawaian",
+            "text": "PNS dengan golongan ruang III/a berpangkat …",
+            "options": [
+                "Pengatur Tingkat I",
+                "Penata Muda",
+                "Penata Muda Tingkat I",
+                "Penata",
+                "Pembina"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKT — Peraturan Kepegawaian",
+            "text": "Berikut ini yang termasuk hukuman disiplin ringan adalah …",
+            "options": [
+                "teguran lisan",
+                "penundaan kenaikan gaji",
+                "penurunan pangkat",
+                "pembebasan dari jabatan",
+                "pemberhentian tidak dengan hormat"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKT — Peraturan Kepegawaian",
+            "text": "Cuti tahunan PNS paling lama …",
+            "options": [
+                "6 hari kerja",
+                "12 hari kerja",
+                "14 hari kerja",
+                "20 hari kerja",
+                "24 hari kerja"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKT — Peraturan Kepegawaian",
+            "text": "PNS yang telah bekerja secara terus-menerus paling singkat 5 tahun berhak atas cuti besar paling lama …",
+            "options": [
+                "1 bulan",
+                "2 bulan",
+                "3 bulan",
+                "6 bulan",
+                "1 tahun"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TKT — Peraturan Kepegawaian",
+            "text": "Pegawai ASN terdiri atas PNS dan …",
+            "options": [
+                "PPPK",
+                "CPNS",
+                "tenaga honorer",
+                "TNI",
+                "Polri"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKT — Peraturan Kepegawaian",
+            "text": "Penilaian kinerja PNS meliputi aspek hasil kerja dan …",
+            "options": [
+                "perilaku kerja",
+                "masa kerja",
+                "tingkat pendidikan",
+                "jumlah kehadiran",
+                "golongan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKT — Pelayanan Publik",
+            "text": "Undang-undang tentang Pelayanan Publik adalah …",
+            "options": [
+                "UU No. 25 Tahun 2009",
+                "UU No. 14 Tahun 2008",
+                "UU No. 37 Tahun 2008",
+                "UU No. 30 Tahun 2014",
+                "UU No. 23 Tahun 2014"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKT — Pelayanan Publik",
+            "text": "Lembaga pengawas eksternal penyelenggaraan pelayanan publik adalah …",
+            "options": [
+                "Ombudsman RI",
+                "KPK",
+                "BPK",
+                "Mahkamah Konstitusi",
+                "Komisi Yudisial"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKT — Pelayanan Publik",
+            "text": "Tolok ukur yang wajib dipenuhi dan menjadi pedoman dalam penyelenggaraan pelayanan serta acuan penilaian kualitas pelayanan disebut …",
+            "options": [
+                "standar pelayanan",
+                "RPJMN",
+                "laporan keuangan",
+                "DIPA",
+                "rencana kerja"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKT — Pelayanan Publik",
+            "text": "Maklumat pelayanan adalah …",
+            "options": [
+                "pernyataan tertulis berisi kewajiban dan janji penyelenggara untuk melaksanakan pelayanan sesuai standar",
+                "daftar harga layanan",
+                "laporan tahunan",
+                "hasil survei kepuasan",
+                "struktur organisasi"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKT — Pelayanan Publik",
+            "text": "Berikut yang bukan asas penyelenggaraan pelayanan publik adalah …",
+            "options": [
+                "kepentingan umum",
+                "kepastian hukum",
+                "kesamaan hak",
+                "keterbukaan",
+                "mengutamakan golongan tertentu"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Kunci Jawaban: E"
+        },
+        {
+            "category": "TKT — Good Governance",
+            "text": "Prinsip good governance yang berkaitan dengan keterbukaan informasi kepada publik adalah …",
+            "options": [
+                "transparansi",
+                "efisiensi",
+                "konsensus",
+                "supremasi hukum",
+                "kesetaraan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKT — Good Governance",
+            "text": "Akuntabilitas dalam tata kelola pemerintahan berarti …",
+            "options": [
+                "kecepatan merespons",
+                "pertanggungjawaban kinerja kepada pemangku kepentingan",
+                "kesetaraan perlakuan",
+                "keikutsertaan masyarakat",
+                "kesepakatan bersama"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKT — Good Governance",
+            "text": "Sistem Pengendalian Intern Pemerintah diatur dalam …",
+            "options": [
+                "PP 60 Tahun 2008",
+                "PP 12 Tahun 2017",
+                "PP 94 Tahun 2021",
+                "PP 11 Tahun 2017",
+                "PP 17 Tahun 2020"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKT — Good Governance",
+            "text": "Undang-undang tentang Keterbukaan Informasi Publik adalah …",
+            "options": [
+                "UU No. 14 Tahun 2008",
+                "UU No. 25 Tahun 2009",
+                "UU No. 30 Tahun 2014",
+                "UU No. 31 Tahun 1999",
+                "UU No. 28 Tahun 1999"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKT — Good Governance",
+            "text": "Sistem Akuntabilitas Kinerja Instansi Pemerintah (SAKIP) diatur dalam …",
+            "options": [
+                "Perpres No. 29 Tahun 2014",
+                "Perpres No. 86 Tahun 2007",
+                "Perpres No. 39 Tahun 2019",
+                "PP No. 60 Tahun 2008",
+                "UU No. 20 Tahun 2023"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKT — Kebijakan Publik",
+            "text": "Urutan siklus kebijakan publik yang benar adalah …",
+            "options": [
+                "formulasi – agenda setting – adopsi – evaluasi – implementasi",
+                "agenda setting – formulasi – adopsi – implementasi – evaluasi",
+                "adopsi – formulasi – implementasi – agenda setting – evaluasi",
+                "implementasi – formulasi – agenda setting – adopsi – evaluasi",
+                "evaluasi – agenda setting – formulasi – adopsi – implementasi"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKT — Kebijakan Publik",
+            "text": "Menurut Thomas R. Dye, kebijakan publik adalah …",
+            "options": [
+                "hanya peraturan tertulis",
+                "apa pun yang dipilih pemerintah untuk dilakukan atau tidak dilakukan",
+                "keputusan DPR saja",
+                "program kerja swasta",
+                "rencana anggaran tahunan"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKT — Kebijakan Publik",
+            "text": "Evaluasi kebijakan yang dilakukan sebelum kebijakan dilaksanakan disebut evaluasi …",
+            "options": [
+                "ex-ante",
+                "ex-post",
+                "formatif akhir",
+                "sumatif",
+                "insidental"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKT — Kebijakan Publik",
+            "text": "Rencana Pembangunan Jangka Panjang Nasional (RPJPN) 2025–2045 ditetapkan dengan …",
+            "options": [
+                "UU No. 17 Tahun 2007",
+                "UU No. 59 Tahun 2024",
+                "UU No. 12 Tahun 2011",
+                "UU No. 20 Tahun 2023",
+                "UU No. 25 Tahun 2009"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKT — Kebijakan Publik",
+            "text": "Partisipasi publik dalam perumusan kebijakan terutama bertujuan untuk …",
+            "options": [
+                "mempercepat pembubaran lembaga",
+                "meningkatkan legitimasi dan kualitas kebijakan",
+                "mengurangi peran pemerintah",
+                "menghindari evaluasi",
+                "memperbesar anggaran"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Visi BPS 2025–2029 adalah …",
+            "options": [
+                "Penyedia Data Statistik Berkualitas untuk Indonesia Maju",
+                "Lembaga yang Independen, Tepercaya, dan Berperan Aktif dalam Mendukung Perumusan Kebijakan Berbasis Data Bersama Indonesia Maju Menuju Indonesia Emas 2045",
+                "Menjadi pusat data terbesar di Asia",
+                "Statistik untuk semua",
+                "Satu Data untuk Indonesia Emas"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Jumlah misi BPS pada Renstra 2025–2029 adalah …",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Misi pertama BPS 2025–2029 adalah …",
+            "options": [
+                "menguatkan kapasitas kelembagaan statistik",
+                "menguatkan kepemimpinan BPS dalam penyelenggaraan SSN",
+                "menyediakan data statistik berkualitas dan insight untuk perumusan kebijakan dan pengambilan keputusan",
+                "mewujudkan tata kelola bersih",
+                "mengembangkan kerja sama internasional"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Misi BPS \"Menguatkan kepemimpinan BPS dalam penyelenggaraan …\" dilanjutkan dengan …",
+            "options": [
+                "Satu Data Indonesia",
+                "Sistem Statistik Nasional",
+                "Reformasi Birokrasi",
+                "Statistik Sektoral",
+                "Pembangunan Daerah"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Misi ketiga BPS 2025–2029 berkaitan dengan …",
+            "options": [
+                "kapasitas kelembagaan statistik yang efektif dan efisien",
+                "publikasi tahunan",
+                "kerja sama luar negeri",
+                "sensus ekonomi",
+                "pembinaan statistik sektoral"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Jangka waktu perencanaan Renstra BPS adalah …",
+            "options": [
+                "1 tahun",
+                "3 tahun",
+                "5 tahun",
+                "10 tahun",
+                "20 tahun"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Sasaran strategis ketiga BPS 2025–2029 adalah terwujudnya kinerja BPS yang …",
+            "options": [
+                "bersih, akuntabel, dan profesional",
+                "modern dan digital",
+                "cepat dan tepat",
+                "besar dan kuat",
+                "mandiri dan inovatif"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Renstra BPS 2025–2029 disusun dengan berpedoman pada …",
+            "options": [
+                "RPJPN 2025–2045 dan RPJMN 2025–2029",
+                "RPJMN 2020–2024 saja",
+                "RKP tahun berjalan saja",
+                "APBD",
+                "Renstra pemerintah daerah"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Renstra BPS 2025–2029 diselaraskan dengan visi Presiden dan Wakil Presiden …",
+            "options": [
+                "Indonesia Maju",
+                "Bersama Indonesia Maju Menuju Indonesia Emas 2045",
+                "Indonesia Hebat",
+                "Indonesia Sejahtera",
+                "Indonesia Digital"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Dokumen perencanaan tahunan yang menjabarkan Renstra adalah …",
+            "options": [
+                "Renja",
+                "RPJPN",
+                "RPJMD",
+                "LAKIP",
+                "Perjanjian internasional"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Perjanjian Kinerja adalah …",
+            "options": [
+                "dokumen kesepakatan atasan dan bawahan untuk mewujudkan target kinerja tertentu",
+                "laporan keuangan",
+                "kontrak pengadaan",
+                "nota dinas",
+                "peraturan pimpinan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Indikator Kinerja Utama (IKU) berfungsi sebagai …",
+            "options": [
+                "ukuran keberhasilan pencapaian sasaran strategis",
+                "daftar pegawai terbaik",
+                "struktur organisasi",
+                "alat presensi",
+                "rencana pengadaan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Sasaran strategis kedua BPS 2025–2029 berkaitan dengan …",
+            "options": [
+                "kualitas penyelenggaraan Sistem Statistik Nasional",
+                "kinerja keuangan",
+                "pemanfaatan teknologi saja",
+                "jumlah pegawai",
+                "kerja sama bilateral"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Sasaran strategis pertama BPS 2025–2029 berkaitan dengan …",
+            "options": [
+                "tata kelola BPS",
+                "peningkatan pemanfaatan data statistik berkualitas dan insight dalam perumusan kebijakan dan pengambilan keputusan",
+                "pembangunan gedung",
+                "rekrutmen pegawai",
+                "pelatihan statistik"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TSI — Renstra BPS 2025–2029",
+            "text": "Renstra BPS 2025–2029 ditetapkan dalam bentuk …",
+            "options": [
+                "Peraturan Badan Pusat Statistik",
+                "Keputusan Presiden",
+                "Undang-Undang",
+                "Peraturan Daerah",
+                "Surat Edaran"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Menurut peraturan organisasinya, BPS adalah …",
+            "options": [
+                "kementerian",
+                "lembaga pemerintah nonkementerian yang berada di bawah dan bertanggung jawab kepada Presiden",
+                "lembaga negara independen di bawah DPR",
+                "BUMN",
+                "unit di bawah Kementerian PPN/Bappenas"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Undang-undang yang menjadi dasar penyelenggaraan statistik di Indonesia adalah …",
+            "options": [
+                "UU No. 16 Tahun 1997 tentang Statistik",
+                "UU No. 14 Tahun 2008",
+                "UU No. 20 Tahun 2023",
+                "UU No. 25 Tahun 2009",
+                "UU No. 23 Tahun 2014"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Jumlah Deputi di lingkungan BPS (kantor pusat) adalah …",
+            "options": [
+                "3",
+                "4",
+                "5",
+                "6",
+                "7"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Penyusunan Produk Domestik Bruto menjadi lingkup Deputi Bidang …",
+            "options": [
+                "Statistik Sosial",
+                "Neraca dan Analisis Statistik",
+                "Statistik Produksi",
+                "Metodologi dan Informasi Statistik",
+                "Statistik Distribusi dan Jasa"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Statistik harga dan perdagangan menjadi lingkup Deputi Bidang …",
+            "options": [
+                "Statistik Sosial",
+                "Statistik Produksi",
+                "Statistik Distribusi dan Jasa",
+                "Neraca dan Analisis Statistik",
+                "Metodologi dan Informasi Statistik"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Statistik tanaman pangan dan industri manufaktur menjadi lingkup Deputi Bidang …",
+            "options": [
+                "Statistik Produksi",
+                "Statistik Sosial",
+                "Statistik Distribusi dan Jasa",
+                "Neraca dan Analisis Statistik",
+                "Metodologi dan Informasi Statistik"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Statistik kependudukan dan ketenagakerjaan menjadi lingkup Deputi Bidang …",
+            "options": [
+                "Statistik Produksi",
+                "Statistik Sosial",
+                "Statistik Distribusi dan Jasa",
+                "Neraca dan Analisis Statistik",
+                "Metodologi dan Informasi Statistik"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Metodologi statistik dan teknologi informasi menjadi lingkup Deputi Bidang …",
+            "options": [
+                "Statistik Produksi",
+                "Statistik Sosial",
+                "Neraca dan Analisis Statistik",
+                "Metodologi dan Informasi Statistik",
+                "Statistik Distribusi dan Jasa"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Kunci Jawaban: D"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Organisasi dan tata kerja BPS Provinsi dan BPS Kabupaten/Kota diatur dengan …",
+            "options": [
+                "Peraturan BPS No. 5 Tahun 2023",
+                "Perpres No. 86 Tahun 2007",
+                "UU No. 16 Tahun 1997",
+                "PP No. 11 Tahun 2017",
+                "Permenpan RB No. 14 Tahun 2017"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Susunan organisasi BPS Kabupaten/Kota terdiri atas …",
+            "options": [
+                "Bagian Umum dan Bidang Statistik",
+                "Subbagian Umum dan Kelompok Jabatan Fungsional",
+                "Sekretariat dan Inspektorat",
+                "Tiga Seksi dan satu Subbagian",
+                "Deputi dan Direktorat"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "BPS Provinsi dan BPS Kabupaten/Kota merupakan …",
+            "options": [
+                "perangkat daerah",
+                "instansi vertikal BPS",
+                "BUMD",
+                "lembaga independen",
+                "unit di bawah kementerian dalam negeri"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Menurut UU No. 16 Tahun 1997, statistik yang penyelenggaraannya menjadi tanggung jawab BPS adalah statistik …",
+            "options": [
+                "dasar",
+                "sektoral",
+                "khusus",
+                "internal",
+                "swasta"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Sensus Ekonomi periodik dilaksanakan setiap 10 tahun pada tahun yang berakhiran …",
+            "options": [
+                "0",
+                "3",
+                "5",
+                "6",
+                "8"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Kunci Jawaban: D"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Hari Statistik Nasional diperingati setiap tanggal …",
+            "options": [
+                "26 September",
+                "17 Agustus",
+                "1 Oktober",
+                "28 Oktober",
+                "20 Mei"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TSI — SOTK BPS",
+            "text": "Nilai-nilai inti BPS yang dikenal dengan singkatan PIA adalah …",
+            "options": [
+                "Profesional, Integritas, Amanah",
+                "Peduli, Inovatif, Akuntabel",
+                "Progresif, Independen, Andal",
+                "Presisi, Integratif, Aktual",
+                "Profesional, Inovatif, Adaptif"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "The report _____ by the team before the deadline yesterday.",
+            "options": [
+                "completes",
+                "was completed",
+                "is completing",
+                "has complete",
+                "completing"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "If I _____ more time, I would finish the survey report.",
+            "options": [
+                "have",
+                "had",
+                "will have",
+                "having",
+                "has had"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "Choose the word closest in meaning to *\"accurate\"*.",
+            "options": [
+                "precise",
+                "careless",
+                "rough",
+                "late",
+                "empty"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "The data _____ collected by field officers every month.",
+            "options": [
+                "is",
+                "are",
+                "was being",
+                "be",
+                "has"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "She has worked at the statistics office _____ 2019.",
+            "options": [
+                "for",
+                "since",
+                "during",
+                "from",
+                "at"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "Neither the supervisor nor the enumerators _____ present at the meeting.",
+            "options": [
+                "was",
+                "is",
+                "were",
+                "has been",
+                "be"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "He said, \"I am preparing the questionnaire.\" (Reported speech)",
+            "options": [
+                "He said that he is preparing the questionnaire.",
+                "He said that he was preparing the questionnaire.",
+                "He said that I was preparing the questionnaire.",
+                "He said that he preparing the questionnaire.",
+                "He said he will prepare the questionnaire."
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "Choose the correct sentence.",
+            "options": [
+                "She don't understand the instruction.",
+                "She doesn't understands the instruction.",
+                "She doesn't understand the instruction.",
+                "She not understand the instruction.",
+                "She didn't understood the instruction."
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "The opposite of *\"increase\"* is …",
+            "options": [
+                "rise",
+                "grow",
+                "decrease",
+                "expand",
+                "gain"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "We are looking forward _____ you at the workshop.",
+            "options": [
+                "to see",
+                "to seeing",
+                "seeing",
+                "for see",
+                "to be seen"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "The word *\"significant\"* in \"a significant change in prices\" means …\nRead the text for questions 97–98.\n> *Statistics Indonesia conducts a national population census every ten years. The data are used by the government to plan education, health services, and infrastructure. Accurate census results help ensure that development programs reach the right people.*",
+            "options": [
+                "unimportant",
+                "noticeable and important",
+                "hidden",
+                "temporary",
+                "illegal"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "How often is the national population census conducted?",
+            "options": [
+                "every year",
+                "every five years",
+                "every ten years",
+                "every twenty years",
+                "every month"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kunci Jawaban: C"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "According to the text, accurate census results help …",
+            "options": [
+                "reduce the number of officers",
+                "development programs reach the right people",
+                "increase taxes",
+                "close government offices",
+                "replace surveys"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "Choose the correct word: \"The new policy will be _____ next month.\"",
+            "options": [
+                "implementing",
+                "implemented",
+                "implement",
+                "implementation",
+                "implements"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        },
+        {
+            "category": "TKP — Bahasa Inggris",
+            "text": "Which sentence is grammatically correct?\n---",
+            "options": [
+                "Each of the officers have a laptop.",
+                "Each of the officers has a laptop.",
+                "Each of the officer have a laptop.",
+                "Each officers has a laptop.",
+                "Each of officers has laptop."
+            ],
+            "correctAnswer": 1,
+            "explanation": "Kunci Jawaban: B"
+        }
+    ]
+};
+const pkgF = {
+    "name": "Paket F",
+    "questions": [
+        {
+            "category": "Pancasila",
+            "text": "Pancasila ditetapkan secara resmi sebagai dasar negara oleh PPKI pada tanggal ....",
+            "options": [
+                "1 Juni 1945",
+                "22 Juni 1945",
+                "18 Agustus 1945",
+                "17 Agustus 1945"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pancasila",
+            "text": "Ir. Soekarno menyampaikan pidato tentang dasar negara dalam sidang BPUPKI pada tanggal ....",
+            "options": [
+                "29 Mei 1945",
+                "1 Juni 1945",
+                "22 Juni 1945",
+                "10 Juli 1945"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pancasila",
+            "text": "Pada lambang negara Garuda Pancasila, sila ketiga dilambangkan dengan ....",
+            "options": [
+                "Bintang",
+                "Rantai",
+                "Pohon beringin",
+                "Kepala banteng"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pancasila",
+            "text": "Dalam konsep Pancasila sebagai ideologi terbuka, nilai yang bersifat tetap dan tidak berubah adalah nilai ....",
+            "options": [
+                "instrumental",
+                "praksis",
+                "dasar",
+                "teknis"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pancasila",
+            "text": "Kedudukan Pancasila sebagai sumber segala sumber hukum negara ditegaskan dalam ....",
+            "options": [
+                "UU No. 12 Tahun 2011 tentang Pembentukan Peraturan Perundang-undangan",
+                "UU No. 5 Tahun 2014 tentang Aparatur Sipil Negara",
+                "UU No. 25 Tahun 2009 tentang Pelayanan Publik",
+                "UU No. 14 Tahun 2008 tentang Keterbukaan Informasi Publik"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pancasila",
+            "text": "Sikap yang sesuai dengan pengamalan sila keempat dalam rapat kerja kantor adalah ....",
+            "options": [
+                "memaksakan kehendak agar keputusan cepat selesai",
+                "mengutamakan musyawarah untuk mencapai mufakat",
+                "meninggalkan rapat jika usul tidak diterima",
+                "menyerahkan seluruh keputusan kepada pimpinan tanpa diskusi"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pancasila",
+            "text": "Menghormati rekan kerja yang sedang menjalankan ibadah merupakan pengamalan sila ....",
+            "options": [
+                "kedua",
+                "ketiga",
+                "keempat",
+                "pertama"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pancasila",
+            "text": "Badan Pembinaan Ideologi Pancasila (BPIP) dibentuk berdasarkan ....",
+            "options": [
+                "Perpres No. 7 Tahun 2018",
+                "Perpres No. 86 Tahun 2007",
+                "UU No. 12 Tahun 2011",
+                "Keppres No. 24 Tahun 2016"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pancasila",
+            "text": "Hari Kesaktian Pancasila diperingati setiap tanggal ....",
+            "options": [
+                "1 Juni",
+                "17 Agustus",
+                "28 Oktober",
+                "1 Oktober"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pancasila",
+            "text": "Pancasila disebut sebagai ideologi terbuka karena ....",
+            "options": [
+                "nilai-nilai dasarnya dapat diganti sesuai kepentingan penguasa",
+                "mampu berinteraksi dengan perkembangan zaman tanpa mengubah nilai dasarnya",
+                "hanya berlaku bagi kelompok tertentu",
+                "tidak memiliki rumusan yang baku"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "UUD 1945",
+            "text": "UUD 1945 telah mengalami perubahan (amandemen) sebanyak ... kali pada tahun 1999–2002.",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "UUD 1945",
+            "text": "Pasal 1 ayat (3) UUD 1945 menyatakan bahwa Negara Indonesia adalah negara ....",
+            "options": [
+                "kekuasaan",
+                "agama",
+                "kesatuan",
+                "hukum"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "UUD 1945",
+            "text": "Menurut Pasal 7 UUD 1945, Presiden dan Wakil Presiden memegang jabatan selama ....",
+            "options": [
+                "lima tahun dan dapat dipilih kembali dalam jabatan yang sama hanya untuk satu kali masa jabatan",
+                "empat tahun dan dapat dipilih kembali tanpa batas",
+                "lima tahun dan dapat dipilih kembali untuk dua kali masa jabatan",
+                "enam tahun dan dapat dipilih kembali satu kali"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "UUD 1945",
+            "text": "Berikut ini yang BUKAN merupakan kewenangan Mahkamah Konstitusi adalah ....",
+            "options": [
+                "menguji undang-undang terhadap UUD 1945",
+                "memutus pembubaran partai politik",
+                "menguji peraturan perundang-undangan di bawah undang-undang terhadap undang-undang",
+                "memutus perselisihan hasil pemilihan umum"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "UUD 1945",
+            "text": "Perekonomian nasional dan kesejahteraan sosial diatur dalam Bab XIV UUD 1945, salah satunya Pasal ....",
+            "options": [
+                "27",
+                "31",
+                "33",
+                "36"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "UUD 1945",
+            "text": "Salah satu tujuan negara yang tercantum dalam alinea keempat Pembukaan UUD 1945 adalah ....",
+            "options": [
+                "menyatakan bahwa kemerdekaan adalah hak segala bangsa",
+                "mencerdaskan kehidupan bangsa",
+                "menyatakan bahwa kemerdekaan dicapai atas berkat rahmat Allah",
+                "menghapuskan penjajahan di dunia"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "UUD 1945",
+            "text": "Fungsi DPR menurut Pasal 20A UUD 1945 adalah ....",
+            "options": [
+                "legislasi, anggaran, dan pengawasan",
+                "eksekutif, legislatif, dan yudikatif",
+                "konsultatif, representasi, dan administratif",
+                "legislasi, yudisial, dan pengawasan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "UUD 1945",
+            "text": "Menurut Pasal 6A UUD 1945, pasangan calon Presiden dan Wakil Presiden terpilih apabila memperoleh suara lebih dari 50% dari jumlah suara dalam pemilu dengan sedikitnya ... di lebih dari separuh jumlah provinsi.",
+            "options": [
+                "20% suara",
+                "25% suara",
+                "30% suara",
+                "50% suara"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "UUD 1945",
+            "text": "Menurut Pasal 31 ayat (4) UUD 1945, negara memprioritaskan anggaran pendidikan sekurang-kurangnya ... dari APBN dan APBD.",
+            "options": [
+                "10%",
+                "20%",
+                "25%",
+                "30%"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "UUD 1945",
+            "text": "Lembaga negara yang memegang kekuasaan membentuk undang-undang menurut Pasal 20 ayat (1) UUD 1945 adalah ....",
+            "options": [
+                "Presiden",
+                "MPR",
+                "DPD",
+                "DPR"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Sejarah Indonesia",
+            "text": "Organisasi pergerakan nasional yang pertama kali berdiri pada 20 Mei 1908 adalah ....",
+            "options": [
+                "Sarekat Islam",
+                "Indische Partij",
+                "Budi Utomo",
+                "Partai Nasional Indonesia"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Sejarah Indonesia",
+            "text": "Peristiwa Rengasdengklok pada 16 Agustus 1945 bertujuan ....",
+            "options": [
+                "mengamankan Soekarno-Hatta dari pengaruh Jepang dan mendesak segera diproklamasikannya kemerdekaan",
+                "merumuskan teks proklamasi kemerdekaan",
+                "membentuk PPKI",
+                "mengumumkan kekalahan Jepang kepada rakyat"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Sejarah Indonesia",
+            "text": "Belanda secara resmi mengakui kedaulatan Indonesia melalui Konferensi Meja Bundar pada tanggal ....",
+            "options": [
+                "17 Agustus 1945",
+                "27 Desember 1949",
+                "17 Agustus 1950",
+                "19 Desember 1948"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Sejarah Indonesia",
+            "text": "Trilogi Politik Etis yang digagas Van Deventer terdiri atas ....",
+            "options": [
+                "perdagangan, pertanian, dan pelayaran",
+                "pendidikan, pajak, dan militer",
+                "irigasi, perkebunan, dan transmigrasi",
+                "irigasi, edukasi, dan emigrasi"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Sejarah Indonesia",
+            "text": "Dekrit Presiden 5 Juli 1959 salah satunya menetapkan ....",
+            "options": [
+                "berlakunya kembali UUD 1945",
+                "berlakunya UUD Sementara 1950",
+                "berlakunya Konstitusi RIS",
+                "dibentuknya DPR hasil Pemilu 1955"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Bahasa Indonesia",
+            "text": "Penulisan kata baku yang benar adalah ....",
+            "options": [
+                "apotik",
+                "apotek",
+                "apoteck",
+                "apotheek"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Bahasa Indonesia",
+            "text": "Kalimat yang efektif adalah ....",
+            "options": [
+                "Para peserta rapat sudah hadir.",
+                "Para peserta-peserta rapat sudah hadir.",
+                "Peserta-peserta para rapat sudah hadir.",
+                "Para peserta rapat-rapat sudah hadir."
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Bahasa Indonesia",
+            "text": "Penulisan kata depan dan imbuhan yang benar terdapat pada kalimat ....",
+            "options": [
+                "Ibu pergi kepasar pagi tadi.",
+                "Ia tinggal disini sejak lama.",
+                "Berkas itu dibawa ke kantor.",
+                "Dia berdiri disamping saya."
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Bahasa Indonesia",
+            "text": "Antonim kata *konkret* adalah ....",
+            "options": [
+                "nyata",
+                "abstrak",
+                "riil",
+                "faktual"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Bahasa Indonesia",
+            "text": "Penulisan huruf kapital yang benar terdapat pada kalimat ....\n---",
+            "options": [
+                "Dia berasal dari sulawesi selatan.",
+                "dia berasal dari Sulawesi selatan.",
+                "Dia berasal dari Sulawesi selatan.",
+                "Dia berasal dari Sulawesi Selatan."
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Peraturan Kepegawaian",
+            "text": "Undang-undang yang saat ini menjadi dasar utama manajemen Aparatur Sipil Negara adalah ....",
+            "options": [
+                "UU No. 5 Tahun 2014",
+                "UU No. 43 Tahun 1999",
+                "UU No. 20 Tahun 2023",
+                "UU No. 25 Tahun 2009"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Peraturan Kepegawaian",
+            "text": "Pegawai ASN terdiri atas ....",
+            "options": [
+                "PNS dan PPPK",
+                "PNS dan honorer",
+                "PNS dan pegawai kontrak daerah",
+                "PPPK dan tenaga alih daya"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Peraturan Kepegawaian",
+            "text": "Berdasarkan PP No. 30 Tahun 2019 tentang Penilaian Kinerja PNS, predikat kinerja yang BUKAN merupakan predikat dalam penilaian kinerja adalah ....",
+            "options": [
+                "Sangat Baik",
+                "Butuh Perbaikan",
+                "Cukup",
+                "Kurang"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Peraturan Kepegawaian",
+            "text": "Jabatan Administrasi dalam jabatan ASN terdiri atas Jabatan Administrator, Jabatan Pelaksana, dan ....",
+            "options": [
+                "Jabatan Fungsional",
+                "Jabatan Pengawas",
+                "Jabatan Pimpinan Tinggi",
+                "Jabatan Struktural Utama"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Peraturan Kepegawaian",
+            "text": "Menurut PP No. 94 Tahun 2021 tentang Disiplin PNS, yang termasuk hukuman disiplin sedang adalah ....",
+            "options": [
+                "teguran lisan",
+                "pemotongan tunjangan kinerja sebesar 25% selama 6, 9, atau 12 bulan",
+                "pembebasan dari jabatan",
+                "pemberhentian tidak dengan hormat"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Peraturan Kepegawaian",
+            "text": "Batas usia pensiun bagi PNS yang menduduki jabatan administrasi adalah ... tahun.",
+            "options": [
+                "56",
+                "57",
+                "58",
+                "60"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Peraturan Kepegawaian",
+            "text": "Hak cuti tahunan PNS adalah selama ... hari kerja.",
+            "options": [
+                "12",
+                "14",
+                "15",
+                "20"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Peraturan Kepegawaian",
+            "text": "Nilai dasar ASN \"BerAKHLAK\" yang berkaitan dengan perilaku meningkatkan kompetensi diri dan membantu orang lain belajar adalah ....",
+            "options": [
+                "Akuntabel",
+                "Harmonis",
+                "Adaptif",
+                "Kompeten"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Peraturan Kepegawaian",
+            "text": "Pangkat PNS pada golongan ruang III/d adalah ....",
+            "options": [
+                "Penata Muda Tingkat I",
+                "Penata Tingkat I",
+                "Pembina",
+                "Penata"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Peraturan Kepegawaian",
+            "text": "Berdasarkan prinsip netralitas, PNS dilarang ....",
+            "options": [
+                "menjadi anggota atau pengurus partai politik",
+                "menggunakan hak pilih dalam pemilu",
+                "menjadi anggota Korpri",
+                "mengikuti pendidikan dan pelatihan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pelayanan Publik",
+            "text": "Ruang lingkup pelayanan publik menurut UU No. 25 Tahun 2009 meliputi ....",
+            "options": [
+                "pelayanan barang publik, jasa publik, dan pelayanan administratif",
+                "pelayanan pertahanan, keamanan, dan peradilan saja",
+                "pelayanan perbankan dan asuransi saja",
+                "pelayanan kepegawaian dan keuangan negara"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pelayanan Publik",
+            "text": "Lembaga pengawas eksternal penyelenggaraan pelayanan publik adalah ....",
+            "options": [
+                "Inspektorat",
+                "BPKP",
+                "Ombudsman Republik Indonesia",
+                "Komisi Aparatur Sipil Negara"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pelayanan Publik",
+            "text": "Penyelenggara pelayanan publik wajib menanggapi pengaduan masyarakat paling lambat ... hari kerja sejak pengaduan diterima.",
+            "options": [
+                "7",
+                "14",
+                "21",
+                "30"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pelayanan Publik",
+            "text": "Berikut yang termasuk komponen standar pelayanan menurut UU No. 25 Tahun 2009 adalah ....",
+            "options": [
+                "visi dan misi lembaga",
+                "struktur organisasi",
+                "laporan keuangan tahunan",
+                "jangka waktu penyelesaian"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Pelayanan Publik",
+            "text": "Maklumat pelayanan adalah ....",
+            "options": [
+                "pernyataan tertulis berisi kesanggupan penyelenggara melaksanakan pelayanan sesuai standar pelayanan",
+                "daftar pegawai yang bertugas di loket pelayanan",
+                "laporan hasil survei kepuasan masyarakat",
+                "surat tugas pelaksana pelayanan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Good Governance",
+            "text": "Prinsip transparansi dalam tata kelola pemerintahan yang baik berarti ....",
+            "options": [
+                "keputusan hanya diketahui oleh pimpinan",
+                "informasi dirahasiakan demi stabilitas organisasi",
+                "informasi tersedia dan dapat diakses oleh pihak yang berkepentingan",
+                "proses kerja boleh berubah tanpa pemberitahuan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Good Governance",
+            "text": "Dalam UU No. 14 Tahun 2008 tentang Keterbukaan Informasi Publik, PPID adalah ....",
+            "options": [
+                "Pejabat Pelaksana Informasi Daerah",
+                "Pejabat Pengelola Informasi dan Dokumentasi",
+                "Panitia Pengawas Informasi dan Dokumen",
+                "Pusat Pelayanan Informasi Dinas"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Good Governance",
+            "text": "Penerima gratifikasi wajib melaporkannya kepada KPK paling lambat ... hari kerja sejak diterima.",
+            "options": [
+                "7",
+                "14",
+                "30",
+                "60"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Good Governance",
+            "text": "Zona Integritas menuju WBK/WBBM bertujuan membangun ....",
+            "options": [
+                "wilayah kerja yang bebas dari korupsi dan birokrasi bersih melayani",
+                "kawasan pelayanan khusus pejabat",
+                "unit kerja dengan anggaran terbesar",
+                "kantor dengan jumlah pegawai terbanyak"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Good Governance",
+            "text": "Tiga pilar utama pelaku dalam good governance adalah ....",
+            "options": [
+                "pemerintah, sektor swasta, dan masyarakat",
+                "eksekutif, legislatif, dan yudikatif",
+                "pusat, provinsi, dan kabupaten/kota",
+                "pimpinan, pegawai, dan pemangku kepentingan internal"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Kebijakan Publik",
+            "text": "Tahap pertama dalam siklus kebijakan publik adalah ....",
+            "options": [
+                "penyusunan agenda",
+                "implementasi kebijakan",
+                "evaluasi kebijakan",
+                "adopsi kebijakan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Kebijakan Publik",
+            "text": "Faktor yang mempengaruhi implementasi kebijakan menurut George C. Edwards III adalah komunikasi, sumber daya, disposisi, dan struktur birokrasi. Berikut yang BUKAN faktor menurut Edwards III adalah ....",
+            "options": [
+                "komunikasi",
+                "disposisi",
+                "struktur birokrasi",
+                "evaluasi"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Kebijakan Publik",
+            "text": "Dalam hierarki peraturan perundang-undangan menurut UU No. 12 Tahun 2011, peraturan yang berada langsung di bawah Undang-Undang/Perppu adalah ....",
+            "options": [
+                "Peraturan Presiden",
+                "Peraturan Pemerintah",
+                "Peraturan Daerah Provinsi",
+                "Peraturan Menteri"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Kebijakan Publik",
+            "text": "Pembina data statistik dalam kerangka Satu Data Indonesia (Perpres No. 39 Tahun 2019) adalah ....",
+            "options": [
+                "Bappenas",
+                "Kementerian Keuangan",
+                "Badan Pusat Statistik",
+                "Kementerian Komunikasi dan Informatika"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Kebijakan Publik",
+            "text": "Rencana Pembangunan Jangka Menengah Nasional (RPJMN) berjangka waktu ....\n---",
+            "options": [
+                "5 tahun",
+                "10 tahun",
+                "20 tahun",
+                "1 tahun"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "Visi BPS periode 2025–2029 adalah ....",
+            "options": [
+                "\"Penyedia Data Statistik Berkualitas untuk Indonesia Maju\"",
+                "\"Lembaga yang Independen, Tepercaya, dan Berperan Aktif dalam Mendukung Perumusan Kebijakan Berbasis Data Bersama Indonesia Maju Menuju Indonesia Emas 2045\"",
+                "\"Statistik Berkualitas untuk Semua\"",
+                "\"Mewujudkan Data Tunggal Nasional yang Mutakhir\""
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "Jumlah misi BPS dalam Renstra 2025–2029 adalah ....",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "Misi pertama BPS 2025–2029 adalah ....",
+            "options": [
+                "menguatkan kepemimpinan BPS dalam penyelenggaraan Sistem Statistik Nasional",
+                "menguatkan kapasitas kelembagaan statistik yang efektif dan efisien",
+                "menyediakan data statistik berkualitas dan insight untuk perumusan kebijakan dan pengambilan keputusan",
+                "mengembangkan statistik sektoral di seluruh daerah"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "Jumlah sasaran strategis BPS dalam Renstra 2025–2029 adalah ....",
+            "options": [
+                "2",
+                "4",
+                "5",
+                "3"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "Renstra BPS 2025–2029 disusun dengan berpedoman pada ....",
+            "options": [
+                "RPJMN 2025–2029 dan RPJPN 2025–2045",
+                "RPJMD seluruh provinsi",
+                "APBN tahun berjalan",
+                "Renstra BPS 2020–2024 saja"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "Unsur yang dijabarkan dalam dokumen Renstra BPS adalah ....",
+            "options": [
+                "visi, misi, tujuan, dan sasaran strategis",
+                "daftar pegawai dan struktur gaji",
+                "laporan realisasi anggaran",
+                "jadwal survei tahunan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "Sesuai Renstra BPS 2025–2029, BPS mendukung RPJMN dengan mengukur ... Indikator Utama RPJMN.",
+            "options": [
+                "25",
+                "35",
+                "45",
+                "55"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "Tahap pembangunan jangka panjang 2025–2029 dalam arah Indonesia Emas 2045 adalah ....",
+            "options": [
+                "Akselerasi Transformasi",
+                "Ekspansi Global",
+                "Penguatan Fondasi Transformasi",
+                "Perwujudan Indonesia Emas"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "Urutan hierarki perencanaan strategis dari yang paling umum ke paling operasional yang benar adalah ....",
+            "options": [
+                "visi – misi – tujuan – sasaran – program – kegiatan",
+                "misi – visi – sasaran – tujuan – kegiatan – program",
+                "visi – tujuan – misi – kegiatan – sasaran – program",
+                "sasaran – tujuan – visi – misi – program – kegiatan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "Indikator Kinerja Utama (IKU) berfungsi untuk ....",
+            "options": [
+                "menentukan jumlah pegawai",
+                "mengukur keberhasilan pencapaian sasaran strategis",
+                "menetapkan tarif layanan",
+                "mengatur tata naskah dinas"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "Perjanjian Kinerja pada instansi pemerintah adalah ....",
+            "options": [
+                "kesepakatan kerja sama antarinstansi",
+                "kontrak pengadaan barang dan jasa",
+                "pernyataan komitmen pencapaian target kinerja antara atasan dan bawahan",
+                "perjanjian pinjaman luar negeri"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "LKjIP adalah singkatan dari ....",
+            "options": [
+                "Laporan Kerja Jabatan Instansi Pemerintah",
+                "Laporan Kinerja Instansi Pemerintah",
+                "Laporan Keuangan Instansi Pusat",
+                "Laporan Kegiatan Jabatan Inti Pegawai"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "Sistem Akuntabilitas Kinerja Instansi Pemerintah (SAKIP) diatur dalam ....",
+            "options": [
+                "Perpres No. 29 Tahun 2014",
+                "Perpres No. 39 Tahun 2019",
+                "PP No. 94 Tahun 2021",
+                "UU No. 14 Tahun 2008"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "Menurut UU No. 25 Tahun 2004 tentang Sistem Perencanaan Pembangunan Nasional, Renstra Kementerian/Lembaga disusun dengan berpedoman pada ....",
+            "options": [
+                "RKP",
+                "RPJMN",
+                "RAPBN",
+                "Renja daerah"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "Renstra",
+            "text": "RPJMD adalah dokumen perencanaan pembangunan daerah untuk jangka waktu ....",
+            "options": [
+                "1 tahun",
+                "5 tahun",
+                "10 tahun",
+                "20 tahun"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "Tugas, fungsi, dan kewenangan BPS ditetapkan antara lain berdasarkan ....",
+            "options": [
+                "Perpres No. 86 Tahun 2007 tentang Badan Pusat Statistik",
+                "Perpres No. 39 Tahun 2019 tentang Satu Data Indonesia",
+                "UU No. 14 Tahun 2008",
+                "PP No. 94 Tahun 2021"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "Secara kelembagaan BPS merupakan lembaga pemerintah nonkementerian yang bertanggung jawab kepada ....",
+            "options": [
+                "Menteri Dalam Negeri",
+                "Menteri Perencanaan Pembangunan Nasional",
+                "Presiden",
+                "Menteri Keuangan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "BPS Kabupaten/Kota berada di bawah dan bertanggung jawab kepada ....",
+            "options": [
+                "Bupati/Wali Kota",
+                "Gubernur",
+                "Kepala BPS Provinsi",
+                "Sekretaris Daerah"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "BPS Provinsi dan BPS Kabupaten/Kota merupakan ....",
+            "options": [
+                "perangkat daerah",
+                "instansi vertikal BPS",
+                "badan usaha milik negara",
+                "lembaga nonstruktural"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "BPS Kabupaten/Kota mempunyai tugas melaksanakan ....",
+            "options": [
+                "penyelenggaraan statistik dasar di kabupaten/kota",
+                "penyusunan APBD kabupaten/kota",
+                "pembinaan pemerintah desa",
+                "penetapan kebijakan statistik nasional"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "Organisasi dan tata kerja BPS Provinsi dan BPS Kabupaten/Kota diatur dalam Peraturan BPS Nomor ....",
+            "options": [
+                "2 Tahun 2023",
+                "3 Tahun 2023",
+                "4 Tahun 2023",
+                "5 Tahun 2023"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "SOTK adalah singkatan dari ....",
+            "options": [
+                "Susunan Organisasi dan Tata Kerja",
+                "Standar Operasional Tugas Kerja",
+                "Sistem Organisasi dan Tata Kelola",
+                "Struktur Operasional Tim Kerja"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "Fungsi administrasi umum dalam organisasi BPS Provinsi dan Kabupaten/Kota mencakup urusan organisasi dan tata laksana, kepegawaian, keuangan, perlengkapan, dan ....",
+            "options": [
+                "rumah tangga",
+                "survei lapangan",
+                "diseminasi data saja",
+                "pengolahan data sensus"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "Undang-undang yang mengatur penyelenggaraan statistik di Indonesia adalah ....",
+            "options": [
+                "UU No. 16 Tahun 1997 tentang Statistik",
+                "UU No. 25 Tahun 2009",
+                "UU No. 14 Tahun 2008",
+                "UU No. 20 Tahun 2023"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "Statistik dasar diselenggarakan oleh ....",
+            "options": [
+                "instansi sektoral",
+                "lembaga swasta",
+                "perguruan tinggi",
+                "Badan Pusat Statistik"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "Statistik sektoral diselenggarakan oleh ....",
+            "options": [
+                "instansi pemerintah sesuai lingkup tugas dan fungsinya",
+                "masyarakat umum",
+                "BPS secara eksklusif",
+                "lembaga internasional"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "Statistik khusus diselenggarakan oleh ....",
+            "options": [
+                "BPS saja",
+                "lembaga, organisasi, perorangan, dan/atau masyarakat",
+                "kementerian teknis saja",
+                "pemerintah daerah saja"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "Sensus Penduduk di Indonesia dilaksanakan setiap 10 tahun pada tahun yang berakhiran ....",
+            "options": [
+                "0",
+                "3",
+                "5",
+                "6"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "Nilai-nilai budaya kerja BPS yang dikenal dengan singkatan PIA adalah ....",
+            "options": [
+                "Profesional, Inovatif, Akuntabel",
+                "Profesional, Integritas, Amanah",
+                "Prima, Integritas, Akuntabel",
+                "Profesional, Independen, Amanah"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "SOTK",
+            "text": "Hari Statistik Nasional diperingati setiap tanggal ....\n---",
+            "options": [
+                "26 Mei",
+                "26 Juni",
+                "26 Agustus",
+                "26 September"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "She ... in this office since 2019.",
+            "options": [
+                "works",
+                "worked",
+                "has worked",
+                "is working"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "If I ... more time, I would finish the report today.",
+            "options": [
+                "have",
+                "had",
+                "will have",
+                "would have"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "The annual report ... by the team yesterday.",
+            "options": [
+                "completed",
+                "was completed",
+                "has completing",
+                "is completing"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "The word *significant* is closest in meaning to ....",
+            "options": [
+                "trivial",
+                "important",
+                "hidden",
+                "slow"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "The opposite of *increase* is ....",
+            "options": [
+                "rise",
+                "grow",
+                "expand",
+                "decrease"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "Find the incorrect part: **Each of the employees have submitted their timesheet.**",
+            "options": [
+                "Each",
+                "of the employees",
+                "have submitted",
+                "their timesheet"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "He is responsible ... the accuracy of the data.",
+            "options": [
+                "of",
+                "for",
+                "at",
+                "with"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "The director, ... office is on the third floor, will join the meeting.",
+            "options": [
+                "whose",
+                "who",
+                "which",
+                "whom"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "The survey results ... published next week.\n**Read the text for questions 95–97.**\n> Statistics Indonesia conducts a national survey every year to collect data on household welfare. Enumerators visit selected households and interview the head of the household. The results are then processed and published so that the government can plan better programs.",
+            "options": [
+                "will be",
+                "will",
+                "are being",
+                "have"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "What is the main purpose of the survey?",
+            "options": [
+                "To train enumerators",
+                "To select new households",
+                "To collect data on household welfare",
+                "To publish a newspaper"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "Who do enumerators interview?",
+            "options": [
+                "The head of the household",
+                "Government officials",
+                "School teachers",
+                "Local journalists"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "The word *selected* in the text is closest in meaning to ....",
+            "options": [
+                "ignored",
+                "paid",
+                "visited twice",
+                "chosen"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "The word *accurate* is closest in meaning to ....",
+            "options": [
+                "approximate",
+                "correct",
+                "late",
+                "optional"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "... it rained heavily, the field survey continued as planned.",
+            "options": [
+                "Because",
+                "So",
+                "Although",
+                "Unless"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        },
+        {
+            "category": "D. TES KOMPETENSI PENUNJANG (TKP) — BAHASA INGGRIS",
+            "text": "The supervisor suggested that she ... the training next month.\n---\n# KUNCI JAWABAN PAKET 1\n| No | Jwb | No | Jwb | No | Jwb | No | Jwb | No | Jwb |\n|---|---|---|---|---|---|---|---|---|---|\n| 1 | C | 21 | C | 41 | A | 61 | A | 81 | A |\n| 2 | B | 22 | A | 42 | C | 62 | C | 82 | B |\n| 3 | C | 23 | B | 43 | B | 63 | C | 83 | A |\n| 4 | C | 24 | D | 44 | D | 64 | A | 84 | B |\n| 5 | A | 25 | A | 45 | A | 65 | B | 85 | D |\n| 6 | B | 26 | B | 46 | C | 66 | C | 86 | C |\n| 7 | D | 27 | A | 47 | B | 67 | B | 87 | B |\n| 8 | A | 28 | C | 48 | C | 68 | A | 88 | B |\n| 9 | D | 29 | B | 49 | A | 69 | B | 89 | B |\n| 10 | B | 30 | D | 50 | A | 70 | B | 90 | D |\n| 11 | C | 31 | C | 51 | A | 71 | A | 91 | C |\n| 12 | D | 32 | A | 52 | D | 72 | C | 92 | B |\n| 13 | A | 33 | C | 53 | B | 73 | C | 93 | A |\n| 14 | C | 34 | B | 54 | C | 74 | B | 94 | A |\n| 15 | C | 35 | B | 55 | A | 75 | A | 95 | C |\n| 16 | B | 36 | C | 56 | B | 76 | D | 96 | A |\n| 17 | A | 37 | A | 57 | B | 77 | A | 97 | D |\n| 18 | A | 38 | D | 58 | C | 78 | A | 98 | B |\n| 19 | B | 39 | B | 59 | D | 79 | A | 99 | C |\n| 20 | D | 40 | A | 60 | A | 80 | D | 100 | B |\n**Pembahasan singkat (soal yang sering keliru):**\n- **14** — Menguji peraturan di bawah UU terhadap UU adalah kewenangan Mahkamah Agung (Pasal 24A), bukan MK.\n- **33** — \"Cukup\" adalah predikat dari aturan lama (PP 46/2011). PP 30/2019: Sangat Baik, Baik, Butuh Perbaikan, Kurang, Sangat Kurang.\n- **34** — Jabatan Administrasi: Administrator, Pengawas, Pelaksana.\n- **44** — Komponen standar pelayanan antara lain dasar hukum, persyaratan, prosedur, jangka waktu penyelesaian, biaya/tarif, produk, sarana, kompetensi pelaksana.\n- **52** — Evaluasi adalah tahap siklus kebijakan, bukan faktor implementasi Edwards III.\n- **54** — BPS adalah Pembina Data Statistik; BIG untuk data geospasial.\n- **62** — BPS mengukur 5 Sasaran Visi Indonesia Emas dan 45 Indikator Utama RPJMN 2025–2029.\n- **83** — Sensus Penduduk tahun berakhiran 0 (SP2020), Sensus Pertanian berakhiran 3, Sensus Ekonomi berakhiran 6.\n- **91** — Subjek \"each\" tunggal, sehingga *has submitted*.\n- **100** — Setelah *suggest that*, memakai bentuk dasar verba (subjunctive).",
+            "options": [
+                "attends",
+                "attend",
+                "attended",
+                "will attended"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kunci Jawaban: A"
+        }
+    ]
+};
+
+if (typeof examData !== 'undefined' && examData.upkp && examData.upkp.packages) {
+    examData.upkp.packages.push(pkgE);
+    examData.upkp.packages.push(pkgF);
+}
+
+if (typeof examData !== 'undefined' && examData.upkp && examData.upkp.packages) { examData.upkp.packages.sort((a, b) => a.name.localeCompare(b.name)); }
+
+// Append Paket B to UKOM
+const ukomPkgB = {
+    "name": "Paket B",
+    "questions": [
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Analisis varians dilakukan untuk mengetahui apakah ada perbedaan rata-rata passing grade ujian nasional SD untuk siswa bimbingan belajar Mahesa Operation dimana terdapat tiga pilihan program yaitu Program Reguler (2 hari seminggu), Program Khusus (3 hari seminggu), dan Program Intensif (5 hari seminggu). 10 sampel untuk masing-masing Program di bimbingan belajar Mahesa Operation tersebut. Derajat bebas between treatment dan within treatment dari analisis varians yang dilakukan adalah ....",
+            "options": [
+                "3 dan 27",
+                "27 dan 2",
+                "10 dan 2",
+                "2 dan 27",
+                "2 dan 10"
+            ],
+            "correctAnswer": 3,
+            "explanation": "k = 3 program, N = 3 x 10 = 30. db between = k - 1 = 2; db within = N - k = 27."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Untuk mengukur suatu variable/indikator dibutuhkan skala pengukuran, kecuali ....",
+            "options": [
+                "rasio",
+                "nominal",
+                "Ordinal",
+                "interval",
+                "longitudinal"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Skala pengukuran: nominal, ordinal, interval, rasio. Longitudinal adalah jenis rancangan/dimensi waktu"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berdasarkan penarikan sampel acak sederhana suatu survei ingin memperkirakan proporsi dalam suatu populasi yang menentang penjatuhan hukuman mati. Dalam menentukan ukuran sampel yang sesuai yang dibutuhkan, manakah dari pilihan berikut yang perlu diikutsertakan dalam perhitungan? (i) margin of error (ii) level of confidence (iii) estimasi proporsi terdahulu (iv) jumlah all possible sample",
+            "options": [
+                "(i), (ii), (iv)",
+                "(i), (ii), dan (iii)",
+                "(ii) dan (iv)",
+                "(i) dan (iii)",
+                "(i) dan (ii)"
+            ],
+            "correctAnswer": 1,
+            "explanation": "n = Z^2 p(1-p) / e^2, sehingga membutuhkan confidence level (Z), estimasi proporsi (p), dan margin of"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Anova digunakan untuk menguji apakah ada perbedaan rata-rata nilai ujian akhir semester antar 3 kelas yang berbeda. Diketahui nilai jumlah kuadrat antar kelompok sebesar 100, dan nilai jumlah kuadrat error sebesar 400. Jika sampel yang digunakan sebanyak 23 dan diketahui F(0,05;2;20) = 3,49; F(0,05;3;20) = 3,10; F(0,05;2;19) = 3,52; F(0,05;3;19) = 3,13, maka kesimpulannya adalah ....",
+            "options": [
+                "lebih dari 25 persen keragaman nilai ujian dapat dijelaskan oleh perbedaan kelas",
+                "pada tingkat signifikansi 5%, tidak terbukti terdapat perbedaan rata-rata nilai antar kelas",
+                "pada tingkat signifikansi 5% hasil pengujian tidak dapat disimpulkan",
+                "pada tingkat signifikansi 5%, kelas yang berbeda memiliki rata-rata nilai yang berbeda secara signifikan",
+                "(opsi E tidak terlihat pada tangkapan layar)"
+            ],
+            "correctAnswer": 0,
+            "explanation": "db between = 2, db within = 23 - 3 = 20. MSB = 100/2 = 50; MSE = 400/20 = 20; F hitung = 2,5 < F tabel\nCatatan: Opsi E terpotong di tangkapan layar; jawaban B tetap paling tepat berdasarkan perhitungan."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Dengan n = 100 diperoleh hasil perkiraan interval 95% tentang rata-rata populasi berkisar antara 78,08 sampai 85,92. Untuk mempersempit perkiraan interval yang dihasilkan, dapat dilakukan dengan cara ....",
+            "options": [
+                "meningkatkan tingkat kepercayaan",
+                "mempersempit cakupan populasi",
+                "memperbesar cakupan populasinya",
+                "mengganti sampel",
+                "menambah jumlah sampel yang digunakan"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Lebar interval = 2 x Z x s/akar(n). Menambah n memperkecil lebar; menaikkan tingkat kepercayaan"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut adalah alat bantu yang digunakan dalam teknik pengumpulan data observasi, kecuali ...",
+            "options": [
+                "daftar wawancara.",
+                "catatan berkala.",
+                "daftar riwayat pengamatan (anecdotal record).",
+                "daftar catatan (Check list).",
+                "skala penilaian (rating scale)."
+            ],
+            "correctAnswer": 0,
+            "explanation": "Daftar wawancara adalah alat bantu teknik wawancara, bukan observasi."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Diberikan data sebagai berikut: 85, 80, 82, 81, 83, 86, 88, 87, 85, 89, 84. Jangkauan kuartil dari data tersebut adalah ....",
+            "options": [
+                "7",
+                "6",
+                "4",
+                "5",
+                "3"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Data terurut: 80, 81, 82, 83, 84, 85, 85, 86, 87, 88, 89 (n = 11). Q1 = 82, Q3 = 87, jangkauan kuartil = Q3"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Suatu lembaga mengadakan survei terhadap staf/pegawai yang ada di kantornya tentang pemahaman pegawai terhadap reformasi birokrasi dan progres yang sudah dilakukan oleh lembaga tersebut. Daftar seluruh pegawai yang lengkap dan up to date dimiliki oleh kantor tersebut. Dari seluruh Pegawai kemudian dipilih beberapa sampel secara acak menggunakan daftar pegawai yang sudah ada, untuk dilakukan wawancara. Teknik sampling yang digunakan dalam kasus ini adalah....",
+            "options": [
+                "probability proportional to size sampling",
+                "cluster sampling",
+                "simple random sampling",
+                "systematic sampling",
+                "stratified sampling"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Ada kerangka sampel lengkap dan unit dipilih acak langsung dari daftar: simple random sampling."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Kelemahan non probability sampling: (1) Tidak ada kontrol terhadap bias dalam pemilihan sampel (2) Tidak bisa menghitung sampling error (3) Sampling error dapat ditekan (4) Hasil penelitian tidak untuk digeneralisasi. Manakah pernyataan yang benar?",
+            "options": [
+                "1, 2, dan 4",
+                "1, 3, dan 4",
+                "1, 2, dan 3",
+                "1 dan 2",
+                "2, 3, 4"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Pernyataan (3) salah: pada non-probability sampling sampling error tidak dapat dihitung/ditekan secara"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Dalam pengambilan sampel acak sederhana, rata-rata sampel adalah penduga yang tidak bias untuk rata-rata populasi karena....",
+            "options": [
+                "rata-rata sampel dari semua sampel yang mungkin bila dirata-ratakan sama dengan rata-rata",
+                "rata-rata sampel mengikuti distribusi sampling dari populasinya",
+                "rata-rata sampel selalu sama dengan rata-rata populasi",
+                "rata-rata sampel berdistribusi normal",
+                "rata-rata sampel selalu sangat dekat dengan rata-rata populasi"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Definisi tak bias: E(x-bar) = mu, yaitu rata-rata dari semua kemungkinan rata-rata sampel sama dengan"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Teknik pengambilan sampel dengan cara sampel dipilih sesuai dengan apa yang menurut pengambil sampel cocok untuk penelitian yang dilakukan disebut....",
+            "options": [
+                "quota sampling",
+                "purposive sampling",
+                "snowball sampling",
+                "covenience sampling",
+                "systematic sampling"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Pemilihan berdasarkan pertimbangan peneliti = purposive (judgment) sampling."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Systematic sampling dikatakan secara sistematis karena ....",
+            "options": [
+                "semua unit mempunyai peluang yang sama untuk terpilih hanya pada saat pengambilan sampel",
+                "pengambilan sampel kedua dan seterusnya berdasarkan pola/ interval",
+                "ada potensi sampel yang terpilih menyebar",
+                "biasanya digunakan pada populasi yang cenderung homogen",
+                "pengambilan sampel kedua dan seterusnya tidak berdasarkan pola/ interval"
+            ],
+            "correctAnswer": 1,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Di antara metode sampling berikut ini, metode manakah yang peluang setiap unit populasi untuk terpilih di dalam sampelnya bernilai sama?",
+            "options": [
+                "probability proportional to size sampling",
+                "haphazard sampling",
+                "cluster sampling",
+                "simple random sampling",
+                "quota sampling"
+            ],
+            "correctAnswer": 3,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Di sebuah gudang toko bahan bangunan, kaleng cat disusun dalam urutan kuning, merah, hitam, hijau, biru yang berulang. Anda mengambil sampel sistematis dalam interval 3 kaleng, dimulai dengan kaleng ke-2. Ada 10 kaleng yang dipamerkan. Berapa estimasi kaleng cat hijau yang dipajang?",
+            "options": [
+                "4",
+                "1",
+                "5",
+                "2",
+                "3"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Posisi terpilih: 2, 5, 8, 11, 14, 17, 20, 23, 26, 29. Siklus 5 warna (hijau di posisi kelipatan 5 + 4): posisi 14"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Dalam model regresi berganda, pernyataan yang paling tepat mengenai koefisien determinasi (R2) yang disesuaikan adalah ....",
+            "options": [
+                "selalu bertambah ketika variabel penjelas ditambahkan",
+                "mungkin bernilai negatif",
+                "adalah persentase variabilitas dalam variabel response yang terkait dengan prediktor",
+                "dapat berkurang ketika variabel penjelas ditambahkan",
+                "sama dengan kuadrat dari koefisien korelasi r"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Adjusted R2 = 1 - (1-R2)(n-1)/(n-k-1) dapat bernilai negatif, berbeda dengan R2 biasa yang tidak pernah\nCatatan: Opsi D ('dapat berkurang') juga benar secara teori. Saya mempertahankan B sesuai kunci; jika kunci resmi"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut adalah hal yang perlu diperhatikan dalam membuat perancangan percobaan, yaitu ... .",
+            "options": [
+                "percobaan bisa saja memiliki kesalahan sistematis yang menyebabkan hasil penelitian menjadi bias",
+                "percobaan tidak perlu direncanakan untuk dapat menghitung peluang ketidakpastian",
+                "percobaan harus dapat mengukur perbedaan pada tingkat ketepatan tertentu dengan peluang yang rendah",
+                "daerah cakupan kesimpulan dari penelitian diusahakan terbatas",
+                "pemilihan perlakuan diusahakan sesederhana mungkin namun tetap konsisten dengan maksud dan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Prinsip: kesederhanaan, derajat ketepatan, bebas kesalahan sistematis, cakupan kesimpulan luas, dan"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Nilai rata-rata dihitung dari nilai sampel acak yang diambil dari populasi, perhitungan mudah, karena daftar elemen yang disediakan hanya sedikit sehingga dapat memakan waktu sangat sedikit, serta perlu meningkatkan jumlah pengamatan untuk menghasilkan akurasi yang tinggi. Beberapa uraian yang ada diatas merupakan definisi atau konsep dari....",
+            "options": [
+                "varian",
+                "standar deviasi sampel",
+                "rata - rata populasi",
+                "rata-rata sampel",
+                "standar deviasi populasi"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Uraian ('nilai rata-rata dihitung dari nilai sampel acak yang diambil dari populasi') adalah definisi rata-rata\nCatatan: KOREKSI: kunci di PDF = B (standar deviasi sampel)."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Suatu teknik sampling di mana hanya unit pertama dipilih dengan bantuan angka random dan untuk mendapatkan sisanya dipilih secara otomatis menurut interval yang ditentukan sebelumnya disebut ....",
+            "options": [
+                "systematic sampling",
+                "simple random sampling",
+                "probability proportional to size sampling",
+                "stratified sampling",
+                "cluster sampling"
+            ],
+            "correctAnswer": 0,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Hal-hal apakah yang merupakan tahapan setelah selesai pengumpulan data survei?",
+            "options": [
+                "Evaluasi manajemen lapangan dan petugas wawancara.",
+                "Evaluasi manajemen lapangan dan memeriksa kuesioner.",
+                "Mengukur reliabilitas dan validitas kuesioner survei.",
+                "Manajemen data, analisis data, lalu diseminasi data dan informasi hasil survei.",
+                "Menentukan tujuan survei, target populasi dan sampel survei."
+            ],
+            "correctAnswer": 3,
+            "explanation": "Setelah pengumpulan data: pengolahan/manajemen data, analisis, lalu diseminasi."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Cara pengumpulan, pengolahan, penyajian, dan analisis data didasarkan pada catatan administrasi yang ada pada pemerintah dan atau masyarakat disebut juga...",
+            "options": [
+                "registrasi data penduduk",
+                "administrasi data kependudukan",
+                "kompilasi produk administrasi",
+                "penyelenggaraan kegiatan administrasi",
+                "integrasi data administrasi"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Cara memperoleh data statistik: sensus, survei, dan kompilasi produk administrasi."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pernyataan berikut yang paling benar adalah....",
+            "options": [
+                "sampel sebaiknya diambil dari beberapa kerangka sampel",
+                "sampel dapat diambil dari satu atau beberapa kerangka sampel",
+                "sampel hanya bisa terpilih satu kali",
+                "sampel harus dipilih secara acak",
+                "sampel hanya bisa diambil dari satu kerangka sampel"
+            ],
+            "correctAnswer": 1,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut ini merupakan pernyataan yang benar mengenai metode statistik nonparametrik yaitu....",
+            "options": [
+                "dapat digunakan jika data berdistribusi normal",
+                "memerlukan ukuran sampel tertentu",
+                "tidak dapat digunakan pada data berskala ordinal",
+                "memerlukan informasi sebaran data",
+                "dapat diterapkan untuk ukuran sampel kecil"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Nonparametrik tidak mensyaratkan distribusi tertentu, cocok untuk sampel kecil, dan justru lazim dipakai"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Dua sekolah yang berbeda menerapkan sistem pengajaran yang berbeda pada mata pelajaran Matematika kelas XII. Di sekolah pertama mata pelajaran matematika diampu oleh tim guru yang terdiri atas 3 orang untuk setiap kelasnya, sementara di sekolah kedua, pelajaran matematika di setiap kelas diampu oleh seorang guru. Di setiap sekolah masing-masing terdapat 3 kelas/rombel dengan jumlah siswa yang sama, yaitu 90 orang. Jika diuji apakah terdapat perbedaan rata-rata nilai matematika antar kelas pada masing-masing sekolah menggunakan Anova dengan H0: u1=u2=u3 dan hasilnya pada tingkat signfikansi 5% untuk Sekolah 1 hipotesis nol tidak ditolak dan Sekolah 2 menyatakan hipotesis nol ditolak, maka kesimpulan yang paling sesuai adalah ....",
+            "options": [
+                "terdapat perbedaan rata-rata nilai matematik yang signifikan kelas di kedua sekolah tersebut",
+                "secara rata-rata, kemampuan matematika siswa di sekolah pertama lebih baik dibandingkan sekolah kedua",
+                "tidak terdapat perbedaan rata-rata nilai matematik yang signifikan kelas di kedua sekolah tersebut",
+                "rata-rata kemampuan matematika siswa antar kelas di Sekolah 1 lebih homogen dibandingkan",
+                "secara rata-rata, kemampuan matematika siswa di sekolah kedua lebih baik dibandingkan sekolah pertama"
+            ],
+            "correctAnswer": 0,
+            "explanation": "H0 tidak ditolak di Sekolah 1 (antar kelas tidak berbeda = homogen); H0 ditolak di Sekolah 2 (antar kelas"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Koefisien korelasi yang digunakan untuk mengukur keeratan hubungan antara dua variabel yang datanya berbentuk data interval atau rasio, disebut....",
+            "options": [
+                "koefisien korelasi spearman",
+                "koefisien korelasi kontingensi",
+                "koefisien Regresi",
+                "koefisien determinasi",
+                "koefisien korelasi Pearson"
+            ],
+            "correctAnswer": 4,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut ini adalah asumsi klasik regresi linear, kecuali....",
+            "options": [
+                "multikolinearitas",
+                "linearitas",
+                "Goodness of Fit",
+                "autokorelasi",
+                "homoskedastisitas"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Goodness of fit adalah ukuran kecocokan model, bukan asumsi klasik."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Lampu Hemat yang diproduksi PT Terang mampu menyala terus menerus hingga 1000 jam. Untuk memeriksa apakah daya tahan lampu tidak berubah, peneliti di PT Terang mengambil sampel 100 lampu dan mengujinya. Diperoleh hasil rata-rata lampu mampu menyala 950 jam. Diketahui bahwa varians populasi waktu nyala lampu tersebut 6400 jam. Dengan taraf nyata a=5%, berapa lama lampu mampu menyala terus menerus sehingga dianggap daya tahan lampu tidak berubah? (|z(0,05)|=1,64 dan |z(0,025)|=1,96)",
+            "options": [
+                "950 jam",
+                "934,32 jam",
+                "936,88 jam",
+                "984,32 jam",
+                "986,88 jam"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Uji dua arah (daya tahan 'tidak berubah'): H0: mu = 1000. sigma = 80, sigma/akar(n) = 80/10 = 8. Batas\nCatatan: KOREKSI: kunci di PDF = A (950 jam), padahal itu hanya nilai rata-rata sampel."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Salah satu contoh data nominal yang benar adalah ....",
+            "options": [
+                "tahapan Sabuk Taekwondo: Putih, Kuning, Hijau, Biru, Merah, Hitam",
+                "tingkat kesepakatan: Tidak setuju, Tidak setuju, Setuju",
+                "kode pos : 16423, 16424, 16425",
+                "tingkat pendapatan: pendapatan rendah, pendapatan menengah, pendapatan tinggi",
+                "pendidikan: SD, SMP, SMA"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kode pos hanya label tanpa urutan. Opsi lain berjenjang (ordinal)."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Di antara pilihan berikut, manakah yang termasuk systematic sampling?",
+            "options": [
+                "Seorang guru ingin mengetahui rata-rata waktu yang dihabiskan untuk mengerjakan pekerjaan",
+                "Setiap mobil di dealer mobil diberi nomor lalu gunakan tabel angka acak untuk memilih mobil yang akan",
+                "Seorang mahasiswa sedang meneliti film mana yang ditonton orang-orang di kotanya. Dia berdiri di luar",
+                "Seorang dosen ingin mengetahui bagaimana opini mahasiswa tentang kebijakan kuliah jarak jauh yang",
+                "Semua unit sampel dalam populasi ditulis dalam sobekan kertas dan digulung, kemudian gulungan"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Titik awal acak lalu interval tetap (setiap kursi ke-5) adalah ciri systematic sampling."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Jenis data kategorik yang memiliki urutan dan tingkatan serta bersifat membedakan tetapi tidak dapat diukur rata-rata nilainya adalah jenis data berskala ....",
+            "options": [
+                "data numerik",
+                "data rasio",
+                "data ordinal",
+                "data interval",
+                "data nominal"
+            ],
+            "correctAnswer": 2,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Syarat pengambilan sampel menggunakan systematic sampling salah satunya adalah....",
+            "options": [
+                "jumlah sampel tidak terlalu banyak",
+                "unit terkecil dalam populasi tidak teridentifikasi",
+                "populasi cenderung menyebar",
+                "data sudah terurut",
+                "karakteristik unit amatan heterogen"
+            ],
+            "correctAnswer": 3,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Sebutkan yang termasuk jenis pengambilan sampel non-probability sampling?",
+            "options": [
+                "Cluster Sampling.",
+                "Snowball Sampling.",
+                "Simple Random Sampling.",
+                "Stratified Sampling.",
+                "Systematic Sampling."
+            ],
+            "correctAnswer": 1,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Tujuan umum dari suatu perancangan percobaan adalah .... .",
+            "options": [
+                "memilih gugus peubah terkendali (X) yang menyebabkan deviasi paling besar",
+                "memilih peubah terkendali (X) dengan pengaruh terkecil terhadap respon (Y)",
+                "memilih gugus peubah terkendali (X) yang mengakibatkan pengaruh peubah tak terkendali paling besar",
+                "memilih gugus peubah terkendali (X) yang paling mendekati nilai harapan dari respon (Y)",
+                "memilih gugus peubah terkendali (X) yang menyebabkan keragaman respon paling besar"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Tujuan DOE: menentukan setting X agar respon Y mendekati nilai harapan (nominal), keragaman Y"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut merupakan alasan Simple Random Sampling jarang digunakan, kecuali....",
+            "options": [
+                "membutuhkan sampel yang jauh lebih sedikit daripada metode lain untuk mendapatkan relatif",
+                "membutuhkan sampel yang jauh lebih sedikit daripada metode lain untuk mendapatkan relatif standar eror",
+                "membutuhkan sampel yang jauh lebih banyak daripada metode lain untuk mendapatkan relatif standar eror",
+                "sampel cenderung menyebar jauh sehingga membutuhkan biaya, tenaga, dan waktu yang lebih banyak",
+                "biasanya digunakan pada populasi yang cenderung homogen kenyataannya jarang populasi homogen"
+            ],
+            "correctAnswer": 0,
+            "explanation": "SRS justru membutuhkan sampel LEBIH BANYAK, sehingga pernyataan 'jauh lebih sedikit' bukan\nCatatan: Opsi A dan B pada soal identik; keduanya berisi pernyataan yang sama sehingga A atau B sama-sama benar."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Hal yang perlu diperhatikan dalam menyusun pertanyaan pada kuesioner adalah ...",
+            "options": [
+                "pertanyaan disusun dengan kalimat panjang.",
+                "pertanyaan dibuat berulang.",
+                "pertanyaan dapat dibuat dengan kalimat tidak langsung.",
+                "pertanyaan boleh ambigu atau ganda.",
+                "pertanyaan harus pendek, jelas, dan mudah dimengerti."
+            ],
+            "correctAnswer": 4,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Adanya sistematik error dalam residual yang berasal dari nilai estimasi dari dependen var yg berkorelasi dari observasi ke observasi lainnya, disebut....",
+            "options": [
+                "Multikolinearitas",
+                "Linearitas",
+                "Goodness of Fit",
+                "Homoskedastisitas",
+                "Autokorelasi"
+            ],
+            "correctAnswer": 4,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Untuk menyajikan data nominal/ordinal, jenis grafik yang paling tepat digunakan adalah ....",
+            "options": [
+                "ogive",
+                "garis dan peta",
+                "batang dan peta",
+                "batang dan Garis",
+                "batang dan pie"
+            ],
+            "correctAnswer": 4,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Metode penarikan sampel yang semua unit mempunyai peluang yang sama untuk terpilih hanya pada saat pengambilan sampel pertama merupakan karakteristik dari....",
+            "options": [
+                "stratified random sampling",
+                "probability proportional to size sampling",
+                "systematic sampling",
+                "systematic sampling",
+                "simple random sampling"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Pada systematic sampling hanya unit pertama yang dipilih acak; sisanya ditentukan oleh interval.\nCatatan: Opsi C dan D pada soal identik (keduanya systematic sampling), jadi C atau D sama-sama benar. Pada SRS"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut ini yang bukan merupakan ciri-ciri data nominal adalah ....",
+            "options": [
+                "tidak memiliki tingkatan/urutan",
+                "memiliki atribut, atau nama",
+                "tidak dapat dilakukan operasi matematika",
+                "memiliki tingkatan",
+                "posisi tiap-tiap kategori setara"
+            ],
+            "correctAnswer": 3,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pengertian angka indeks harga yang paling tepat adalah Angka indeks yang menunjukkan perubahan ....",
+            "options": [
+                "Perubahan nilai dan harga dari periode ke periode lainnya",
+                "jumlah dan harga dari periode ke periode lainnya",
+                "jumlah dari periode ke periode lainnya",
+                "harga dari periode ke periode lainnya",
+                "Nilai dari periode ke periode lainnya"
+            ],
+            "correctAnswer": 3,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Skenario mana yang akan menghasilkan hasil yang paling tidak bias?",
+            "options": [
+                "Bertanya kepada para atlet di Pemusatan Latihan Nasional (Pelatnas) tentang acara televisi favorit",
+                "Bertanya kepada pembeli di toko tempat berbelanja favorit mereka",
+                "Bertanya kepada penggemar yang hadir di suatu pertandingan sepak bola siapa tim sepak bola favorit",
+                "Bertanya kepada mahasiswa saat mengikuti UKM pecinta alam tentang hobi mereka",
+                "Bertanya kepada guru kimia yang hadir di Seminar Nasional Pendidikan Kimia tentang mata pelajaran"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Topik pertanyaan (acara TV) tidak terkait dengan konteks tempat/kelompok responden, sehingga bias"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Syarat indikator yang baik adalah ....",
+            "options": [
+                "clean, reliable, economic, adequate, monitorable",
+                "clear, reliable, economic, adequate, comparable",
+                "clear, reliable, economic, adequate, monitorable",
+                "clear, flexible, economic, adequate, monitorable",
+                "clear, specific, economic, adequate, monitorable"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Mengacu pada kriteria CREAM (Clear, Relevant, Economic, Adequate, Monitorable); di antara opsi,\nCatatan: KOREKSI: kunci di PDF = B (comparable). Tingkat keyakinan sedang: kriteria 'reliable' pada soal merupakan"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Parameter standar deviasi bisa diperoleh berdasarkan: (1) Hasil prasurvei (2) Expert Judgment (3) Hasil penelitian terdahulu (4) Aturan Deming. Manakah pernyataan yang benar?",
+            "options": [
+                "1, 3, dan 4",
+                "1, 2, dan 4",
+                "1, 2, dan 3",
+                "1 dan 2",
+                "2, 3, 4"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Sumber informasi standar deviasi untuk penentuan sampel: prasurvei (pilot), expert judgment, dan"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Apa yang dimaksud dengan teknik pengumpulan data melalui wawancara?",
+            "options": [
+                "Pengumpulan data dengan menggunakan buku biografi.",
+                "Pengumpulan data dengan cara mengajukan pertanyaan tertulis untuk dijawab secara tertulis oleh",
+                "Pengumpulan data dengan cara melakukan pengamatan terhadap objek penelitian.",
+                "Pengumpulan data dengan cara melakukan tanya jawab sambil bertatap muka antara pewawancara",
+                "Pengumpulan data dengan menggunakan buku autobiografi."
+            ],
+            "correctAnswer": 0,
+            "explanation": ""
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Salah satu cara untuk mendeteksi terjadinya autokorelasi adalah menggunakan statistik uji durbin-watson (D). Suatu pengujian hipotesis H0: p = 0 melawan H0: p > 0, diperoleh nilai statistik uji D sebesar 0,790. Sementara itu, nilai tabel durbin-watson menunjukan bahwa nilai dL = 0,950 dan dU = 1,150. Berdasarkan hasil tersebut, dapat disimpulkan bahwa ....",
+            "options": [
+                "gagal tolak H0, tidak terdapat autokorelasi karena D < dL",
+                "tolak H0, terdeteksi adanya autokorelasi positif karena D < dL",
+                "tolak H0, terdeteksi adanya autokorelasi negatif, karena D < dL",
+                "gagal tolak H0, tidak terjadi autokorelasi positif maupun negatif karena D < dL",
+                "tidak dapat disimpulkan adanya autokorelasi negatif maupun positif tidak berada di antara dL dan dU"
+            ],
+            "correctAnswer": 1,
+            "explanation": "H1: rho > 0 (autokorelasi positif). D = 0,790 < dL = 0,950, maka H0 ditolak: ada autokorelasi positif."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Seorang dokter memilih secara acak 300 pasien untuk mencari tau apakah metode pengobatan tertentu efektif untuk diterapkan. Kelemahan metode sampling tersebut adalah sebagai berikut, kecuali....",
+            "options": [
+                "cocok untuk populasi yang relatif homogen",
+                "cocok untuk cakupan survei yang tidak terlalu luas karena membutuhkan kerangka sampel sampai elemen,",
+                "biaya tinggi untuk populasi yang besar",
+                "subgrup yang minoritas juga sangat mungkin tidak akan terwakili",
+                "teknik estimasi parameternya tidak rumit"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Estimasi parameter yang mudah/tidak rumit adalah keunggulan SRS, bukan kelemahan."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pernyataan yang salah terkait systematic sampling adalah....",
+            "options": [
+                "pengurutan unit sampling akan memperbesar varians",
+                "dengan pengurutan tertentu, sampel akan lebih representatif",
+                "tidak cocok diterapkan untuk populasi dengan variasi periodik",
+                "pengurutan unit sampling akan memperkecil varians",
+                "penarikan sampel lebih mudah dan cepat"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Pengurutan unit justru memperkecil varians (opsi D benar), sehingga opsi A salah."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Dibawah ini yang bukan merupakan salah satu asumsi yang diperlukan dalam One Way Anova adalah....",
+            "options": [
+                "data dari setiap kelompok yang akan diuji berdistribusi normal",
+                "varian antar kelompok harus homogen",
+                "sampel berasal dari kelompok yang independen",
+                "komponen-komponen modelnya bersifat aditif",
+                "nilai perbandingan kedua varian mendekati angka satu"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Asumsi ANOVA: normalitas, homogenitas ragam, independensi, dan model aditif. 'Perbandingan dua\nCatatan: KOREKSI (keyakinan sedang): kunci di PDF = D (aditif), padahal aditivitas termasuk asumsi model."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pada pengambilan sampel without replacement, tiap unit amatan akan memiliki peluang yang berdistribusi....",
+            "options": [
+                "Binomial",
+                "Normal",
+                "Geometrik",
+                "Poisson",
+                "Uniform"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Pada penarikan tanpa pengembalian, peluang tiap unit terpilih pada tiap urutan penarikan sama (1/N),\nCatatan: Distribusi hipergeometrik tidak ada di opsi; uniform adalah yang paling mendekati."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Menyadari pentingnya akurasi data wawancara maka petugas pencacah lapangan harus fokus pada maksud dan tujuan wawancara. Beberapa langkah agar petugas fokus pada pencacahan antara lain, kecuali ...",
+            "options": [
+                "probing (pertanyaan penelusuran) dan klarifikasi perlu dilakukan oleh petugas untuk menggali jawaban",
+                "memastikan setiap kolom, baris dan rincian pada dokumen pendataan sudah terisi dengan lengkap",
+                "mengikuti alur pertanyaan pada kuesioner dan ketika pembicaraan responden dirasakan mulai menyimpang",
+                "menggunakan bahasa yang sederhana dan dimengerti oleh responden. Jika diperlukan pertanyaan dapat",
+                "petugas tidak mengarahkan jawaban responden. Biarkan responden menjawab apa adanya dan spontan."
+            ],
+            "correctAnswer": 0,
+            "explanation": "Probing, mengikuti alur, bahasa sederhana, dan tidak mengarahkan jawaban adalah teknik fokus\nCatatan: KOREKSI (keyakinan sedang): kunci di PDF = E."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Ukuran dari ketepatan sebuah koefisien hubungan antar variabel dalam memprediksi nilai populasinya adalah....",
+            "options": [
+                "standar error koefisien regresi",
+                "standar error koefisien determinasi",
+                "standar error koefisien kointegrasi",
+                "standar error koefisien regresi",
+                "standar error koefisien korelasi"
+            ],
+            "correctAnswer": 4,
+            "explanation": "'Koefisien hubungan antar variabel' = koefisien korelasi, sehingga ukuran ketepatannya adalah standar"
+        }
+    ]
+};
+
+if (typeof examData !== 'undefined' && examData.ukom && examData.ukom.packages) {
+    examData.ukom.packages.push(ukomPkgB);
+    examData.ukom.packages.sort((a, b) => a.name.localeCompare(b.name));
+}
