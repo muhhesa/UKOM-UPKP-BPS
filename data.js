@@ -8455,3 +8455,1333 @@ if (typeof examData !== 'undefined' && examData.ukompjl && examData.ukompjl.pack
     examData.ukompjl.packages.push(ukomPkgB);
     examData.ukompjl.packages.sort((a, b) => a.name.localeCompare(b.name));
 }
+
+// Replace Paket A and add Paket C to UKOM
+const ukomPkgA_new = {
+    "name": "Paket A",
+    "questions": [
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Analisis varians dilakukan untuk membandingkan rata-rata nilai try out siswa pada 4 program bimbel. Setiap program diambil 8 siswa sebagai sampel. Derajat bebas between treatment dan within treatment adalah ....",
+            "options": [
+                "3 dan 28",
+                "4 dan 28",
+                "28 dan 3",
+                "3 dan 32",
+                "8 dan 3"
+            ],
+            "correctAnswer": 0,
+            "explanation": "k = 4, N = 32 \u2192 db antar = k\u22121 = 3; db dalam = N\u2212k = 28."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Untuk mengukur suatu variabel diperlukan skala pengukuran, kecuali ....",
+            "options": [
+                "nominal",
+                "ordinal",
+                "interval",
+                "panel",
+                "rasio"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Panel adalah struktur/jenis data (gabungan cross-section dan time series), bukan skala"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Suatu survei ingin mengestimasi rata-rata populasi dengan SRS. Untuk menentukan ukuran sampel yang dibutuhkan, hal berikut yang perlu diperhitungkan adalah: (i) margin of error (ii) level of confidence (iii) estimasi simpangan baku populasi (iv) proporsi sampel terdahulu",
+            "options": [
+                "(i), (ii), dan (iv)",
+                "(i), (ii), dan (iii)",
+                "(ii) dan (iv)",
+                "(i) dan (iii)",
+                "(iii) dan (iv)"
+            ],
+            "correctAnswer": 1,
+            "explanation": "n = (Z\u03c3/e)\u00b2 \u2192 butuh Z (confidence), \u03c3, dan e (margin of error). Proporsi dipakai untuk estimasi"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Anova digunakan untuk menguji perbedaan rata-rata nilai antar 3 kelas. Diketahui JK antar kelompok = 150, JK galat = 450, dan jumlah sampel 24. Diketahui F(0,05;2;21) = 3,47; F(0,05;3;21) = 3,07; F(0,05;2;20) = 3,49; F(0,05;3;20) = 3,10. Kesimpulannya adalah ....",
+            "options": [
+                "pada tingkat signifikansi 5%, tidak terbukti ada perbedaan rata-rata nilai antar kelas",
+                "pada tingkat signifikansi 5% hasil pengujian tidak dapat disimpulkan",
+                "lebih dari 30 persen keragaman nilai dijelaskan oleh perbedaan kelas",
+                "kurang dari 20 persen keragaman nilai dijelaskan oleh perbedaan kelas",
+                "pada tingkat signifikansi 5%, terdapat perbedaan rata-rata nilai antar kelas yang signifikan"
+            ],
+            "correctAnswer": 4,
+            "explanation": "db antar = 2, db galat = 21. KT antar = 75, KT galat = 450/21 \u2248 21,43 \u2192 F = 3,5 > 3,47 \u2192 tolak"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Dengan n = 100 diperoleh interval kepercayaan 95% rata-rata populasi antara 62,04 sampai 67,96. Agar interval yang dihasilkan lebih sempit, dapat dilakukan dengan ....",
+            "options": [
+                "menaikkan tingkat kepercayaan menjadi 99%",
+                "memperbesar cakupan populasi",
+                "menambah jumlah sampel",
+                "mengurangi jumlah sampel",
+                "mengganti sampel dengan jumlah yang sama"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Lebar interval \u221d 1/\u221an; n yang lebih besar mempersempit interval."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut adalah kelebihan wawancara dibandingkan kuesioner yang diisi sendiri oleh responden, kecuali ....",
+            "options": [
+                "biaya pelaksanaan relatif murah",
+                "pewawancara dapat melakukan probing",
+                "tingkat respons cenderung lebih tinggi",
+                "pertanyaan yang kurang dipahami dapat dijelaskan",
+                "ekspresi dan situasi responden dapat diamati"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Wawancara butuh petugas, waktu, dan transport sehingga biayanya relatif mahal."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Diberikan data: 12, 15, 11, 18, 14, 16, 20, 13, 17, 19, 21. Jangkauan kuartil (Q3 \u2212 Q1) data tersebut adalah ....",
+            "options": [
+                "5",
+                "7",
+                "8",
+                "6",
+                "4"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Terurut: 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21. Q1 = 13, Q3 = 19 \u2192 6."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Suatu sekolah memiliki daftar 500 siswa yang terurut abjad. Peneliti memilih satu angka acak antara 1\u201310, lalu mengambil setiap siswa ke-10 berikutnya. Teknik sampling yang digunakan adalah ....",
+            "options": [
+                "simple random sampling",
+                "systematic sampling",
+                "stratified sampling",
+                "cluster sampling",
+                "quota sampling"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Awal acak + interval tetap = systematic sampling."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Kelemahan non probability sampling: (1) Sampling error tidak dapat dihitung (2) Hasil sulit digeneralisasi ke populasi (3) Peluang terpilih setiap unit diketahui (4) Ada unsur subjektivitas dalam pemilihan Manakah pernyataan yang benar?",
+            "options": [
+                "1, 3, dan 4",
+                "2, 3, dan 4",
+                "1 dan 3",
+                "3 saja",
+                "1, 2, dan 4"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Pernyataan (3) salah: pada non-probability, peluang terpilih tidak diketahui."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Jika ukuran sampel diperbesar menjadi 4 kali semula (\u03c3 tetap), standar error rata-rata sampel menjadi ....",
+            "options": [
+                "seperempat dari semula",
+                "dua kali semula",
+                "setengah dari semula",
+                "empat kali semula",
+                "tidak berubah"
+            ],
+            "correctAnswer": 2,
+            "explanation": "SE = \u03c3/\u221an; n \u2192 4n sehingga SE \u2192 SE/2."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Peneliti meminta responden pertama menunjukkan kenalannya yang memenuhi kriteria, kemudian kenalan itu menunjukkan yang lain, dan seterusnya. Teknik ini disebut ....",
+            "options": [
+                "snowball sampling",
+                "quota sampling",
+                "purposive sampling",
+                "systematic sampling",
+                "stratified sampling"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Responden merekrut responden berikutnya = snowball (non-probability)."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Stratified sampling paling efisien (varians kecil) apabila ....",
+            "options": [
+                "antar strata homogen dan di dalam strata heterogen",
+                "antar dan di dalam strata sama-sama heterogen",
+                "antar strata dan di dalam strata sama-sama homogen",
+                "antar strata heterogen dan di dalam strata homogen",
+                "ukuran strata dibuat sama besar"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Strata dibuat homogen di dalam dan berbeda antar strata agar varians penduga mengecil."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Metode sampling yang peluang terpilih setiap unitnya berbanding lurus dengan ukuran unit tersebut adalah ....",
+            "options": [
+                "simple random sampling",
+                "probability proportional to size sampling",
+                "systematic sampling",
+                "quota sampling",
+                "haphazard sampling"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Definisi PPS."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Populasi N = 1.200 dan n = 80 dengan systematic sampling. Jika angka acak awal adalah 7, unit keempat yang terpilih bernomor ....",
+            "options": [
+                "45",
+                "60",
+                "67",
+                "37",
+                "52"
+            ],
+            "correctAnswer": 4,
+            "explanation": "k = N/n = 15. Unit terpilih: 7, 22, 37, 52."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pernyataan yang benar mengenai koefisien determinasi (R\u00b2) pada regresi berganda adalah ....",
+            "options": [
+                "dapat bernilai negatif",
+                "dapat lebih besar dari 1",
+                "tidak akan turun ketika variabel penjelas ditambahkan",
+                "selalu lebih kecil dari R\u00b2 yang disesuaikan",
+                "mengukur signifikansi tiap koefisien regresi"
+            ],
+            "correctAnswer": 2,
+            "explanation": "R\u00b2 tidak pernah turun saat variabel ditambah; yang bisa turun/negatif adalah R\u00b2 adjusted."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Tiga prinsip dasar perancangan percobaan adalah ....",
+            "options": [
+                "replikasi, pengacakan, dan kontrol lokal",
+                "replikasi, stratifikasi, dan klasterisasi",
+                "pengacakan, pembobotan, dan kalibrasi",
+                "randomisasi, sensus, dan triangulasi",
+                "replikasi, interpolasi, dan randomisasi"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Prinsip Fisher: replikasi, randomisasi, dan kontrol lokal (blocking)."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Ukuran sebaran yang menyatakan rata-rata penyimpangan data terhadap rata-ratanya dalam satuan data asli adalah ....",
+            "options": [
+                "varians",
+                "koefisien variasi",
+                "median",
+                "simpangan baku",
+                "jangkauan"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Simpangan baku = \u221avarians, satuannya sama dengan data; varians satuan kuadrat; koefisien"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Systematic sampling kurang tepat digunakan apabila kerangka sampel ....",
+            "options": [
+                "tersusun secara acak",
+                "memiliki pola periodik yang selaras dengan interval sampling",
+                "berukuran besar",
+                "lengkap dan mutakhir",
+                "bersifat homogen"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Periodisitas yang selaras dengan interval dapat menimbulkan bias."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Tahapan yang dilakukan setelah pengumpulan data dan sebelum analisis data survei adalah ....",
+            "options": [
+                "penentuan tujuan survei",
+                "penyusunan kuesioner",
+                "penarikan sampel",
+                "diseminasi hasil survei",
+                "pengolahan data (editing, coding, entri, validasi)"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Alur: perencanaan \u2192 pengumpulan \u2192 pengolahan \u2192 analisis \u2192 diseminasi."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pengumpulan data yang mencakup seluruh elemen populasi disebut ....",
+            "options": [
+                "survei",
+                "kompilasi produk administrasi",
+                "sensus",
+                "studi kasus",
+                "registrasi sampel"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Sensus = pencacahan lengkap; survei = sebagian populasi."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Kerangka sampel yang baik harus ....",
+            "options": [
+                "lengkap, tidak tumpang tindih, dan mutakhir",
+                "memuat sebagian unit saja",
+                "boleh mengandung unit ganda",
+                "disusun setelah pencacahan selesai",
+                "hanya memuat unit yang mudah dijangkau"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kerangka harus mencakup seluruh unit target tanpa duplikasi dan selalu diperbarui."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Alternatif nonparametrik untuk uji t dua sampel independen adalah ....",
+            "options": [
+                "uji Wilcoxon signed rank",
+                "uji Kruskal-Wallis",
+                "uji korelasi Pearson",
+                "uji Mann-Whitney U",
+                "uji F"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Wilcoxon untuk berpasangan; Kruskal-Wallis untuk lebih dari 2 kelompok."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Dua pabrik A dan B masing-masing memiliki 4 mesin. ANOVA dengan H0: \u00b51=\u00b52=\u00b53=\u00b54 pada \u03b1 = 5% menolak H0 untuk Pabrik A dan tidak menolak H0 untuk Pabrik B. Kesimpulan yang paling sesuai adalah ....",
+            "options": [
+                "rata-rata produksi Pabrik A lebih tinggi dari Pabrik B",
+                "rata-rata produksi antar mesin di Pabrik B lebih homogen dibandingkan Pabrik A",
+                "rata-rata produksi Pabrik B lebih tinggi dari Pabrik A",
+                "tidak ada perbedaan antar mesin di kedua pabrik",
+                "semua mesin di Pabrik A berbeda satu sama lain"
+            ],
+            "correctAnswer": 1,
+            "explanation": "ANOVA membandingkan antar mesin dalam satu pabrik, bukan level antar pabrik."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Koefisien korelasi yang sesuai untuk dua variabel berskala ordinal adalah ....",
+            "options": [
+                "korelasi Pearson",
+                "koefisien kontingensi",
+                "koefisien determinasi",
+                "koefisien regresi",
+                "korelasi Spearman"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Spearman rank untuk data ordinal."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut adalah asumsi klasik regresi linear berganda, kecuali ....",
+            "options": [
+                "residual berdistribusi normal",
+                "homoskedastisitas",
+                "koefisien determinasi yang tinggi",
+                "tidak ada multikolinearitas",
+                "tidak ada autokorelasi"
+            ],
+            "correctAnswer": 2,
+            "explanation": "R\u00b2 tinggi bukan asumsi; ia hanya ukuran kecocokan model."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Baterai diklaim tahan 500 jam. Sampel 64 baterai rata-rata menyala 480 jam, varians populasi 1.600 jam\u00b2. Pada \u03b1 = 5% (|z(0,05)|=1,64; |z(0,025)|=1,96), rata-rata sampel minimum agar daya tahan dianggap tidak berubah adalah ....",
+            "options": [
+                "490,2 jam",
+                "491,8 jam",
+                "480 jam",
+                "509,8 jam",
+                "488,4 jam"
+            ],
+            "correctAnswer": 0,
+            "explanation": "SE = 40/\u221a64 = 5. Uji dua arah: 500 \u2212 1,96\u00d75 = 490,2. (491,8 adalah hasil uji satu arah.)"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Contoh data nominal yang benar adalah ....",
+            "options": [
+                "peringkat juara lomba: juara 1, 2, 3",
+                "tingkat kepuasan: rendah, sedang, tinggi",
+                "kelas sosial: bawah, menengah, atas",
+                "jenis pekerjaan: PNS, wiraswasta, petani",
+                "jenjang pendidikan: SD, SMP, SMA"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Jenis pekerjaan hanya label tanpa urutan; opsi lain berurutan (ordinal)."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Manakah yang termasuk stratified random sampling?",
+            "options": [
+                "Dari daftar mahasiswa dipilih setiap mahasiswa ke-7",
+                "Mahasiswa dikelompokkan menurut fakultas, lalu dari tiap fakultas dipilih sampel secara acak",
+                "Beberapa fakultas dipilih acak, lalu seluruh mahasiswanya disurvei",
+                "Mewawancarai mahasiswa yang ditemui di kantin",
+                "Nama mahasiswa diundi dari sebuah wadah"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Pembagian ke strata lalu acak di tiap strata = stratified. Opsi lain: systematic, cluster,"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Suhu udara dalam derajat Celsius termasuk data berskala ....",
+            "options": [
+                "nominal",
+                "ordinal",
+                "rasio",
+                "kategorik",
+                "interval"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Ada jarak bermakna tetapi tidak ada nol mutlak \u2192 interval."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Systematic sampling lebih cocok digunakan ketika ....",
+            "options": [
+                "unit populasi tidak dapat diurutkan sama sekali",
+                "populasi sangat kecil dan heterogen",
+                "kerangka sampel tersusun berurutan dan populasi besar",
+                "kerangka sampel tidak tersedia dan tidak ada pola",
+                "peneliti ingin memastikan semua strata terwakili"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Pemilihan dengan interval mudah dan cepat bila daftar sudah berurutan."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Yang termasuk non-probability sampling adalah ....",
+            "options": [
+                "quota sampling",
+                "stratified sampling",
+                "cluster sampling",
+                "simple random sampling",
+                "probability proportional to size sampling"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Quota sampling memilih unit tanpa pengacakan."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Randomisasi dalam percobaan bertujuan untuk ....",
+            "options": [
+                "menambah jumlah perlakuan",
+                "memperkecil derajat bebas galat",
+                "membuat ragam galat menjadi nol",
+                "menghindari bias sistematis dalam penempatan perlakuan pada unit percobaan",
+                "mempercepat pelaksanaan percobaan"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Pengacakan menyebarkan faktor tak terkendali secara merata sehingga bias sistematis"
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut adalah kelebihan simple random sampling, kecuali ....",
+            "options": [
+                "setiap unit memiliki peluang terpilih yang sama",
+                "tidak memerlukan kerangka sampel",
+                "penduga rata-rata bersifat tidak bias",
+                "estimasi parameter relatif sederhana",
+                "cocok untuk populasi yang relatif homogen"
+            ],
+            "correctAnswer": 1,
+            "explanation": "SRS justru memerlukan kerangka sampel yang lengkap."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pertanyaan kuesioner \u201cApakah Anda puas dengan gaji dan fasilitas kantor?\u201d melanggar prinsip penyusunan kuesioner karena ....",
+            "options": [
+                "terlalu pendek",
+                "disusun dengan kalimat tidak langsung",
+                "merupakan pertanyaan terbuka",
+                "menggunakan bahasa baku",
+                "mengandung dua hal sekaligus (double-barreled)"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Satu pertanyaan hanya boleh menanyakan satu hal."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Kondisi ragam residual yang tidak konstan disebut ....",
+            "options": [
+                "homoskedastisitas",
+                "autokorelasi",
+                "heteroskedastisitas",
+                "multikolinearitas",
+                "linearitas"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Heteroskedastisitas = varians galat tidak konstan."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Grafik yang paling tepat untuk menyajikan distribusi frekuensi data kontinu adalah ....",
+            "options": [
+                "histogram",
+                "diagram lingkaran",
+                "diagram batang",
+                "peta tematik",
+                "pictogram"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Histogram menggambarkan sebaran data kontinu dengan batang saling menempel."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Metode yang peluang setiap unit untuk terpilih sama pada setiap pengambilan adalah ....",
+            "options": [
+                "systematic sampling",
+                "stratified sampling dengan alokasi proporsional",
+                "probability proportional to size sampling",
+                "simple random sampling",
+                "quota sampling"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Pada SRS setiap unit berpeluang sama di setiap penarikan."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut yang bukan merupakan ciri data ordinal adalah ....",
+            "options": [
+                "memiliki urutan/tingkatan",
+                "jarak antar kategori selalu sama",
+                "dapat diperingkat",
+                "tidak dapat dihitung rata-ratanya",
+                "posisi tiap kategori tidak setara"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Jarak antar kategori yang sama adalah ciri interval/rasio."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Indeks Harga Konsumen (IHK) digunakan untuk mengukur ....",
+            "options": [
+                "perubahan jumlah produksi barang",
+                "perubahan jumlah penduduk",
+                "perubahan nilai ekspor",
+                "perubahan upah minimum",
+                "perubahan rata-rata harga barang dan jasa yang dikonsumsi rumah tangga"
+            ],
+            "correctAnswer": 4,
+            "explanation": "IHK mengukur perubahan harga paket barang dan jasa konsumsi rumah tangga."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Dalam survei kepuasan layanan publik, skenario yang paling tidak bias adalah ....",
+            "options": [
+                "bertanya kepada pengunjung yang mengisi QR code di loket",
+                "bertanya kepada pegawai instansi yang bersangkutan",
+                "memilih warga secara acak dari daftar penduduk lalu mewawancarainya di rumah",
+                "bertanya kepada warga yang aktif di media sosial instansi",
+                "bertanya kepada relawan layanan instansi"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Pemilihan acak dari daftar penduduk mencakup seluruh populasi tanpa self-selection."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Akronim SMART pada penentuan indikator/target adalah ....",
+            "options": [
+                "Specific, Measurable, Achievable, Relevant, Time-bound",
+                "Simple, Measurable, Adequate, Relevant, Time-bound",
+                "Specific, Monitorable, Achievable, Reliable, Timely",
+                "Specific, Measurable, Adjustable, Reliable, Time-bound",
+                "Simple, Meaningful, Achievable, Relevant, Tested"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Definisi baku SMART."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Jika simpangan baku populasi tidak diketahui, perkiraannya dapat diperoleh dari: (1) survei pendahuluan (2) penelitian terdahulu (3) expert judgment (4) hasil sensus tahun depan Pernyataan yang benar adalah ....",
+            "options": [
+                "1, 2, dan 4",
+                "1, 3, dan 4",
+                "2, 3, dan 4",
+                "1, 2, dan 3",
+                "1 dan 4"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Sensus tahun depan belum ada, sehingga tidak bisa dipakai."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Wawancara terstruktur adalah wawancara yang ....",
+            "options": [
+                "pertanyaannya dikembangkan bebas sesuai situasi",
+                "pertanyaannya baku dan urutannya sama untuk semua responden",
+                "tidak memakai pedoman tertulis",
+                "hanya dilakukan melalui telepon",
+                "dilakukan tanpa tatap muka dan tanpa instrumen"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Terstruktur = pedoman baku, urutan dan redaksi sama."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pengujian H0: \u03c1 = 0 melawan H1: \u03c1 > 0 dengan Durbin-Watson menghasilkan D = 1,850, dL = 1,200, dU = 1,500. Kesimpulannya adalah ....",
+            "options": [
+                "tolak H0, terdapat autokorelasi positif karena D > dU",
+                "tolak H0, terdapat autokorelasi positif karena D < dL",
+                "tidak dapat disimpulkan karena D berada di antara dL dan dU",
+                "gagal tolak H0, terdapat autokorelasi negatif",
+                "gagal tolak H0, tidak terdapat autokorelasi positif karena D > dU"
+            ],
+            "correctAnswer": 4,
+            "explanation": "D = 1,85 > dU = 1,50 \u2192 tidak ada bukti autokorelasi positif."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut adalah kelemahan simple random sampling, kecuali ....",
+            "options": [
+                "memerlukan kerangka sampel yang lengkap",
+                "biaya tinggi untuk populasi yang besar dan tersebar",
+                "peluang terpilih setiap unit sama besar",
+                "sampel dapat menyebar jauh sehingga butuh tenaga dan waktu",
+                "subkelompok minoritas mungkin tidak terwakili"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Peluang sama adalah sifat/kelebihan SRS."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pernyataan yang salah mengenai stratified sampling adalah ....",
+            "options": [
+                "pembentukan strata selalu membuat varians penduga lebih besar daripada SRS",
+                "strata harus saling lepas dan menyeluruh",
+                "unit dalam tiap strata dipilih secara acak",
+                "setiap strata terwakili dalam sampel",
+                "memerlukan informasi untuk membagi populasi ke strata"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Dengan strata yang tepat, varians justru lebih kecil atau sama dengan SRS."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut yang bukan merupakan asumsi ANOVA satu arah adalah ....",
+            "options": [
+                "galat berdistribusi normal",
+                "ragam antar kelompok homogen",
+                "pengamatan saling bebas",
+                "ukuran sampel tiap kelompok harus sama persis",
+                "perlakuan dialokasikan secara acak"
+            ],
+            "correctAnswer": 3,
+            "explanation": "ANOVA tetap dapat dilakukan pada data tidak seimbang (unbalanced)."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pada pengambilan sampel dengan pengembalian (with replacement) dari N unit, peluang suatu unit tertentu terpilih pada setiap pengambilan adalah ....",
+            "options": [
+                "semakin besar pada pengambilan berikutnya",
+                "sama pada setiap pengambilan, yaitu 1/N",
+                "semakin kecil pada pengambilan berikutnya",
+                "1/(N\u22121) pada pengambilan kedua",
+                "bergantung pada unit yang terambil sebelumnya"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Karena unit dikembalikan, populasi tetap N sehingga peluang konstan."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Untuk menjaga kualitas data, langkah petugas pencacah berikut benar, kecuali ....",
+            "options": [
+                "melakukan probing jika jawaban belum jelas",
+                "membacakan pertanyaan sesuai kuesioner",
+                "memeriksa kelengkapan isian sebelum meninggalkan lokasi",
+                "menjelaskan maksud dan tujuan survei",
+                "mengisi jawaban berdasarkan perkiraan petugas bila responden tidak berada di tempat"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Jawaban tidak boleh diperkirakan; petugas harus kembali atau menjadwalkan ulang."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Ukuran ketepatan rata-rata sampel sebagai penduga rata-rata populasi adalah ....",
+            "options": [
+                "simpangan baku populasi",
+                "varians sampel",
+                "standar error rata-rata",
+                "koefisien variasi",
+                "jangkauan data"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Standar error rata-rata = \u03c3/\u221an."
+        }
+    ]
+};
+const ukomPkgC_new = {
+    "name": "Paket C",
+    "questions": [
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Percobaan membandingkan 5 perlakuan, masing-masing diulang 6 kali. Derajat bebas perlakuan dan galat pada ANOVA satu arah adalah ....",
+            "options": [
+                "5 dan 30",
+                "4 dan 30",
+                "4 dan 25",
+                "25 dan 4",
+                "5 dan 25"
+            ],
+            "correctAnswer": 2,
+            "explanation": "k = 5, N = 30 \u2192 4 dan 25."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berat badan dalam kilogram termasuk data berskala ....",
+            "options": [
+                "rasio",
+                "nominal",
+                "ordinal",
+                "interval",
+                "kategorik"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Memiliki nol mutlak sehingga perbandingan (rasio) bermakna."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Survei proporsi dengan SRS menggunakan p = 0,5, margin of error 5%, dan tingkat kepercayaan 95% (Z = 1,96). Ukuran sampel minimum (dibulatkan ke atas) adalah ....",
+            "options": [
+                "384",
+                "196",
+                "271",
+                "385",
+                "400"
+            ],
+            "correctAnswer": 3,
+            "explanation": "n = 1,96\u00b2 \u00d7 0,25 / 0,05\u00b2 = 384,16 \u2192 dibulatkan ke atas 385."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Dari 30 pengamatan pada 3 kelompok diperoleh JK antar = 60 dan JK galat = 270. Nilai F hitung adalah ....",
+            "options": [
+                "2,0",
+                "3,0",
+                "4,5",
+                "6,0",
+                "0,33"
+            ],
+            "correctAnswer": 1,
+            "explanation": "KT antar = 60/2 = 30; KT galat = 270/27 = 10; F = 3,0."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Jika tingkat kepercayaan dinaikkan dari 95% menjadi 99% dengan n dan \u03c3 tetap, lebar interval kepercayaan ....",
+            "options": [
+                "menyempit",
+                "tetap",
+                "menjadi nol",
+                "tidak dapat ditentukan",
+                "melebar"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Nilai Z lebih besar (2,576 vs 1,96) sehingga interval makin lebar."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Observasi partisipan adalah teknik pengumpulan data di mana ....",
+            "options": [
+                "peneliti hanya membaca dokumen tertulis",
+                "responden mengisi kuesioner sendiri",
+                "peneliti ikut terlibat dalam kegiatan subjek yang diamati",
+                "peneliti mengajukan pertanyaan tertulis",
+                "peneliti mengamati dari jauh tanpa interaksi apa pun"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Pada observasi partisipan peneliti menjadi bagian dari kegiatan yang diamati."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Diberikan data: 12, 5, 7, 20, 9, 15, 8, 10, 18, 13, 16. Jangkauan antar kuartil (Q3 \u2212 Q1) adalah ....",
+            "options": [
+                "8",
+                "6",
+                "10",
+                "12",
+                "7"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Terurut: 5, 7, 8, 9, 10, 12, 13, 15, 16, 18, 20. Q1 = 8, Q3 = 16 \u2192 8."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Sebuah kecamatan terdiri atas 30 desa. Dipilih 5 desa secara acak dan seluruh kepala keluarga di desa terpilih dicacah. Teknik sampling ini adalah ....",
+            "options": [
+                "stratified sampling",
+                "systematic sampling",
+                "simple random sampling",
+                "cluster sampling",
+                "quota sampling"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Desa sebagai klaster dipilih acak, lalu seluruh unit dalam klaster dicacah."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Keunggulan probability sampling: (1) peluang terpilih setiap unit diketahui (2) sampling error dapat dihitung (3) hasil dapat digeneralisasi ke populasi (4) tidak memerlukan kerangka sampel Pernyataan yang benar adalah ....",
+            "options": [
+                "1, 2, dan 4",
+                "1, 2, dan 3",
+                "1, 3, dan 4",
+                "2, 3, dan 4",
+                "1 dan 4"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Probability sampling umumnya memerlukan kerangka sampel."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Varians sampel s\u00b2 dihitung dengan pembagi n\u22121 karena menghasilkan penduga ragam populasi yang ....",
+            "options": [
+                "selalu sama dengan \u03c3\u00b2",
+                "selalu lebih besar dari \u03c3\u00b2",
+                "selalu berdistribusi normal",
+                "berbias ke bawah",
+                "tak bias"
+            ],
+            "correctAnswer": 4,
+            "explanation": "E(s\u00b2) = \u03c3\u00b2 bila memakai pembagi n\u22121."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Peneliti menetapkan kuota 50 laki-laki dan 50 perempuan, lalu mewawancarai siapa saja yang ditemui sampai kuota terpenuhi. Teknik ini disebut ....",
+            "options": [
+                "stratified random sampling",
+                "cluster sampling",
+                "quota sampling",
+                "systematic sampling",
+                "simple random sampling"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Kuota ditentukan tetapi pemilihan unit tidak acak \u2192 quota (non-probability)."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Cluster sampling paling efisien apabila ....",
+            "options": [
+                "antar klaster homogen dan di dalam klaster heterogen",
+                "antar klaster heterogen dan di dalam klaster homogen",
+                "antar dan di dalam klaster sama-sama homogen",
+                "klaster berukuran sangat kecil",
+                "tidak ada informasi tentang klaster"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kebalikan dari strata: klaster idealnya miniatur populasi."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Jika populasi terbagi dalam kelompok yang heterogen dan setiap kelompok ingin terwakili, metode yang paling tepat adalah ....",
+            "options": [
+                "cluster sampling",
+                "convenience sampling",
+                "snowball sampling",
+                "stratified sampling",
+                "quota sampling tanpa strata"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Stratified menjamin keterwakilan tiap strata."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Populasi N = 900, n = 60 dengan systematic sampling. Jika angka acak awal adalah 4, unit kelima yang terpilih bernomor ....",
+            "options": [
+                "19",
+                "64",
+                "79",
+                "75",
+                "60"
+            ],
+            "correctAnswer": 1,
+            "explanation": "k = 900/60 = 15. Unit: 4, 19, 34, 49, 64."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Model regresi memiliki R\u00b2 = 0,80, n = 21, dan k = 4 variabel penjelas. R\u00b2 yang disesuaikan adalah ....",
+            "options": [
+                "0,80",
+                "0,76",
+                "0,70",
+                "0,64",
+                "0,75"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Adj R\u00b2 = 1 \u2212 (1\u22120,80)\u00d720/16 = 1 \u2212 0,25 = 0,75."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Fungsi utama replikasi dalam percobaan adalah ....",
+            "options": [
+                "menghilangkan seluruh galat",
+                "mengurangi jumlah perlakuan",
+                "menduga ragam galat percobaan dan meningkatkan ketelitian",
+                "menggantikan peran pengacakan",
+                "menjamin semua perlakuan identik"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Pengulangan memungkinkan penduga galat dan meningkatkan presisi."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Rata-rata suatu data 50 dengan simpangan baku 5. Koefisien variasinya adalah ....",
+            "options": [
+                "10%",
+                "5%",
+                "1%",
+                "45%",
+                "55%"
+            ],
+            "correctAnswer": 0,
+            "explanation": "KV = s / x\u0304 \u00d7 100% = 5/50 \u00d7 100% = 10%."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Dalam systematic sampling, interval sampling (k) dihitung dengan ....",
+            "options": [
+                "n / N",
+                "N \u2212 n",
+                "\u221aN",
+                "N / n",
+                "N \u00d7 n"
+            ],
+            "correctAnswer": 3,
+            "explanation": "k = ukuran populasi dibagi ukuran sampel."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Urutan tahapan survei yang benar adalah ....",
+            "options": [
+                "pengumpulan data, perencanaan, pengolahan, diseminasi, analisis, persiapan",
+                "perencanaan, persiapan, pengumpulan data, pengolahan, analisis, diseminasi",
+                "persiapan, perencanaan, analisis, pengumpulan data, pengolahan, diseminasi",
+                "perencanaan, pengumpulan data, persiapan, analisis, pengolahan, diseminasi",
+                "analisis, pengumpulan data, perencanaan, persiapan, pengolahan, diseminasi"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Alur baku survei dari perencanaan hingga diseminasi."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Contoh kompilasi produk administrasi adalah ....",
+            "options": [
+                "sensus penduduk 10 tahunan",
+                "survei sosial ekonomi nasional",
+                "survei harga konsumen di pasar",
+                "wawancara langsung ke rumah tangga",
+                "pengolahan data pencatatan kelahiran dan kematian dari kantor catatan sipil"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Data berasal dari catatan administrasi instansi, bukan pencacahan langsung."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Under-coverage pada kerangka sampel terjadi apabila kerangka ....",
+            "options": [
+                "memuat unit ganda",
+                "memuat unit di luar populasi target",
+                "tidak memuat sebagian unit populasi target",
+                "terlalu mutakhir",
+                "berukuran sama dengan populasi"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Under-coverage = unit target tidak terdaftar di kerangka."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Uji Kruskal-Wallis merupakan alternatif nonparametrik dari ....",
+            "options": [
+                "ANOVA satu arah",
+                "uji t berpasangan",
+                "korelasi Pearson",
+                "regresi linear sederhana",
+                "uji z satu sampel"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Kruskal-Wallis untuk lebih dari dua kelompok independen, menggantikan ANOVA satu arah."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Jika H0 ditolak pada ANOVA, langkah selanjutnya yang tepat adalah ....",
+            "options": [
+                "menyimpulkan semua rata-rata sama",
+                "mengulang penelitian dengan data yang sama",
+                "menghitung koefisien korelasi",
+                "melakukan uji lanjut (post hoc) seperti Tukey atau LSD",
+                "menghentikan analisis"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Uji lanjut menentukan pasangan kelompok mana yang berbeda."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Koefisien korelasi r = \u22120,85 menunjukkan ....",
+            "options": [
+                "hubungan positif yang kuat",
+                "hubungan negatif yang kuat",
+                "hubungan negatif yang lemah",
+                "tidak ada hubungan",
+                "hubungan positif yang lemah"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Tanda negatif = berlawanan arah; |r| = 0,85 tergolong kuat."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Multikolinearitas dalam regresi berganda dapat dideteksi dengan ....",
+            "options": [
+                "statistik Durbin-Watson",
+                "uji Breusch-Pagan",
+                "uji Shapiro-Wilk",
+                "uji Chow",
+                "Variance Inflation Factor (VIF)"
+            ],
+            "correctAnswer": 4,
+            "explanation": "VIF yang besar menandakan korelasi tinggi antar variabel penjelas."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Mesin pengisi dikatakan mengisi rata-rata 250 gram. Sampel 36 kemasan rata-rata 245 gram, \u03c3 = 18 gram. Pada \u03b1 = 5% uji dua arah (|z(0,025)| = 1,96), kesimpulannya adalah ....",
+            "options": [
+                "H0 ditolak, isi rata-rata kurang dari 250 gram",
+                "H0 ditolak, isi rata-rata lebih dari 250 gram",
+                "H0 tidak ditolak, isi rata-rata tidak berbeda dari 250 gram",
+                "hasil pengujian tidak dapat disimpulkan",
+                "H0 tidak ditolak, isi rata-rata sama persis dengan 245 gram"
+            ],
+            "correctAnswer": 2,
+            "explanation": "z = (245\u2212250)/(18/6) = \u22121,67; |z| = 1,67 < 1,96 \u2192 gagal tolak H0."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Contoh data nominal adalah ....",
+            "options": [
+                "nomor punggung pemain sepak bola",
+                "tinggi badan pemain",
+                "peringkat klasemen tim",
+                "tingkat nyeri: ringan, sedang, berat",
+                "suhu tubuh pemain"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Nomor punggung hanya label identitas tanpa urutan/ukuran."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Seorang peneliti memilih sengaja 10 ahli kebijakan yang dianggap paling memahami topik penelitiannya. Teknik ini adalah ....",
+            "options": [
+                "snowball sampling",
+                "systematic sampling",
+                "stratified sampling",
+                "purposive sampling",
+                "simple random sampling"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Pemilihan berdasarkan pertimbangan peneliti = purposive."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Jenjang pendidikan (SD, SMP, SMA, PT) berskala ....",
+            "options": [
+                "nominal",
+                "ordinal",
+                "interval",
+                "rasio",
+                "numerik kontinu"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Memiliki urutan tetapi jarak antar jenjang tidak terukur."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Perbedaan utama systematic sampling dengan simple random sampling adalah ....",
+            "options": [
+                "systematic tidak memerlukan kerangka sampel",
+                "pada systematic seluruh unit dipilih berdasarkan interval tanpa angka acak",
+                "systematic selalu menghasilkan varians lebih kecil",
+                "systematic termasuk non-probability sampling",
+                "pada systematic hanya unit pertama dipilih acak, selanjutnya berdasarkan interval"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Systematic: start acak + interval tetap; SRS: setiap unit dipilih acak."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Peneliti mewawancarai mahasiswa yang kebetulan lewat di depan perpustakaan dan mudah dijangkau. Teknik ini disebut ....",
+            "options": [
+                "quota sampling",
+                "cluster sampling",
+                "convenience sampling",
+                "stratified sampling",
+                "systematic sampling"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Responden dipilih karena mudah ditemui."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pengelompokan unit percobaan yang homogen ke dalam blok bertujuan untuk ....",
+            "options": [
+                "mengendalikan keragaman yang berasal dari sumber di luar perlakuan",
+                "menambah jumlah perlakuan",
+                "menghilangkan kebutuhan replikasi",
+                "membuat data berdistribusi normal",
+                "memperbesar ragam galat"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Blocking menurunkan galat dengan mengelompokkan unit yang mirip."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Dari populasi 5 unit diambil sampel 2 unit tanpa pengembalian dan tanpa memperhatikan urutan. Banyaknya kemungkinan sampel adalah ....",
+            "options": [
+                "20",
+                "25",
+                "5",
+                "10",
+                "15"
+            ],
+            "correctAnswer": 3,
+            "explanation": "C(5,2) = 5!/(2!\u00b73!) = 10."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Kelebihan pertanyaan tertutup dalam kuesioner adalah ....",
+            "options": [
+                "responden bebas menjawab dengan kata sendiri",
+                "mudah diolah dan dianalisis",
+                "menggali jawaban yang tidak terduga",
+                "tidak memerlukan daftar pilihan jawaban",
+                "mengurangi kebutuhan pengkodean pada semua kasus"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Jawaban terstandar sehingga mudah ditabulasi."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Uji yang digunakan untuk mendeteksi heteroskedastisitas adalah ....",
+            "options": [
+                "Variance Inflation Factor",
+                "statistik Durbin-Watson",
+                "uji Shapiro-Wilk",
+                "uji Kruskal-Wallis",
+                "uji Breusch-Pagan"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Breusch-Pagan menguji kekonstanan ragam residual."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Grafik yang paling tepat untuk menyajikan perkembangan data selama beberapa periode waktu adalah ....",
+            "options": [
+                "diagram lingkaran",
+                "peta tematik",
+                "diagram garis",
+                "diagram pohon",
+                "diagram pencar"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Diagram garis menampilkan tren data runtun waktu."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Dari populasi 50 unit dilakukan pengambilan sampel dengan pengembalian. Peluang suatu unit tertentu terpilih pada satu kali pengambilan adalah ....",
+            "options": [
+                "0,02",
+                "0,2",
+                "0,05",
+                "0,01",
+                "0,04"
+            ],
+            "correctAnswer": 0,
+            "explanation": "1/50 = 0,02."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut yang bukan merupakan ciri data rasio adalah ....",
+            "options": [
+                "memiliki urutan",
+                "jarak antar nilai bermakna",
+                "dapat dilakukan operasi pembagian",
+                "tidak memiliki nol mutlak",
+                "dapat dihitung rata-ratanya"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Data rasio justru memiliki nol mutlak."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Jika IHK tahun dasar = 100 dan IHK tahun berjalan = 125, maka harga secara umum mengalami kenaikan sebesar ....",
+            "options": [
+                "125%",
+                "25%",
+                "12,5%",
+                "20%",
+                "100%"
+            ],
+            "correctAnswer": 1,
+            "explanation": "(125\u2212100)/100 \u00d7 100% = 25%."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Survei opini nasional yang hanya menggunakan telepon rumah (landline) berpotensi bias karena ....",
+            "options": [
+                "sampel terlalu besar",
+                "pertanyaan terlalu pendek",
+                "pewawancara terlalu berpengalaman",
+                "populasi terlalu homogen",
+                "kerangka sampel tidak mencakup rumah tangga tanpa telepon rumah"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Terjadi under-coverage sehingga sebagian populasi tidak mungkin terpilih."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pada kriteria indikator CREAM, huruf E (Economic) berarti ....",
+            "options": [
+                "indikator hanya berlaku untuk bidang ekonomi",
+                "indikator selalu berbentuk uang",
+                "biaya pengumpulan data indikator terjangkau",
+                "indikator dihitung tiap hari",
+                "indikator tidak memerlukan data"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Economic = pengukuran indikator layak dari sisi biaya."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Statistik uji t (bukan z) digunakan pada pengujian rata-rata ketika ....",
+            "options": [
+                "simpangan baku populasi tidak diketahui dan sampel kecil",
+                "simpangan baku populasi diketahui",
+                "sampel sangat besar dan \u03c3 diketahui",
+                "data berskala nominal",
+                "populasi berhingga dan tidak homogen"
+            ],
+            "correctAnswer": 0,
+            "explanation": "\u03c3 tidak diketahui \u2192 diganti s sehingga memakai distribusi t."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Probing dalam wawancara adalah ....",
+            "options": [
+                "pertanyaan yang mengarahkan responden ke jawaban tertentu",
+                "menghentikan wawancara bila jawaban tidak sesuai",
+                "mengisi jawaban berdasarkan dugaan petugas",
+                "pertanyaan lanjutan untuk menggali jawaban yang belum jelas atau lengkap tanpa mengarahkan",
+                "membaca pertanyaan berulang tanpa penjelasan"
+            ],
+            "correctAnswer": 3,
+            "explanation": "Probing bersifat netral dan bertujuan menggali jawaban."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pengujian H0: \u03c1 = 0 melawan H1: \u03c1 < 0 dengan Durbin-Watson menghasilkan D = 3,10, dL = 1,10, dU = 1,54. Kesimpulannya adalah ....",
+            "options": [
+                "gagal tolak H0, tidak ada autokorelasi karena D > dU",
+                "tolak H0, terdapat autokorelasi negatif karena 4 \u2212 D < dL",
+                "tolak H0, terdapat autokorelasi positif karena D > dU",
+                "tidak dapat disimpulkan karena 4 \u2212 D berada di antara dL dan dU",
+                "gagal tolak H0, terdapat autokorelasi positif"
+            ],
+            "correctAnswer": 1,
+            "explanation": "4 \u2212 D = 0,90 < dL = 1,10 \u2192 tolak H0; autokorelasi negatif."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Berikut adalah keunggulan stratified sampling, kecuali ....",
+            "options": [
+                "setiap strata terwakili dalam sampel",
+                "dapat meningkatkan presisi penduga",
+                "memungkinkan estimasi per strata",
+                "dapat mengurangi varians dibanding SRS",
+                "tidak memerlukan informasi apa pun tentang populasi"
+            ],
+            "correctAnswer": 4,
+            "explanation": "Stratified membutuhkan informasi untuk membentuk strata."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Pernyataan yang salah mengenai one-stage cluster sampling adalah ....",
+            "options": [
+                "kerangka sampel yang dibutuhkan berupa daftar klaster",
+                "biaya lebih hemat untuk populasi yang tersebar luas",
+                "hanya sebagian unit dalam klaster terpilih yang dicacah",
+                "seluruh unit dalam klaster terpilih dicacah",
+                "klaster dipilih secara acak"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Pada one-stage, seluruh unit dalam klaster terpilih dicacah."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Hubungan jumlah kuadrat pada ANOVA satu arah yang benar adalah ....",
+            "options": [
+                "JK total = JK antar kelompok + JK galat",
+                "JK total = JK antar kelompok \u2212 JK galat",
+                "JK antar kelompok = JK total + JK galat",
+                "JK galat = JK total + JK antar kelompok",
+                "JK total = JK antar kelompok \u00d7 JK galat"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Dekomposisi variasi total: JKT = JKA + JKG."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Dari populasi N = 200 diambil sampel n = 20 dengan SRS tanpa pengembalian. Peluang suatu unit tertentu terpilih ke dalam sampel adalah ....",
+            "options": [
+                "0,01",
+                "0,05",
+                "0,20",
+                "0,10",
+                "0,02"
+            ],
+            "correctAnswer": 3,
+            "explanation": "n/N = 20/200 = 0,10."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Jika responden menolak diwawancarai, tindakan petugas yang tepat adalah ....",
+            "options": [
+                "memaksa responden agar mau menjawab",
+                "menjelaskan maksud dan tujuan survei dengan sopan serta menjamin kerahasiaan data",
+                "mengisi kuesioner berdasarkan perkiraan",
+                "mengganti dengan tetangga yang mudah ditemui",
+                "mengancam akan melaporkan responden"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Pendekatan persuasif dan jaminan kerahasiaan adalah prosedur standar."
+        },
+        {
+            "category": "Statistisi Ahli Pertama",
+            "text": "Simpangan baku populasi 20 dan ukuran sampel 100. Standar error rata-rata sampel adalah ....",
+            "options": [
+                "0,2",
+                "20",
+                "200",
+                "4",
+                "2"
+            ],
+            "correctAnswer": 4,
+            "explanation": "SE = \u03c3/\u221an = 20/10 = 2."
+        }
+    ]
+};
+
+if (typeof examData !== 'undefined' && examData.ukompjl && examData.ukompjl.packages) {
+    // Find Paket A and replace it
+    let foundA = false;
+    for (let i = 0; i < examData.ukompjl.packages.length; i++) {
+        if (examData.ukompjl.packages[i].name === "Paket A") {
+            examData.ukompjl.packages[i] = ukomPkgA_new;
+            foundA = true;
+            break;
+        }
+    }
+    if (!foundA) {
+        examData.ukompjl.packages.push(ukomPkgA_new);
+    }
+    
+    examData.ukompjl.packages.push(ukomPkgC_new);
+    examData.ukompjl.packages.sort((a, b) => a.name.localeCompare(b.name));
+}
